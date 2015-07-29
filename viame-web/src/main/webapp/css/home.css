@@ -1,0 +1,67 @@
+	body {
+		min-height: 2000px;
+		padding-top: 50px;
+		background-color: orange;
+		overflow-y:hidden;
+	}
+	#input-wrapper
+	{ 
+		margin: 5px auto;
+		max-width: 1100px;
+	}
+	#input-1 {
+		margin: auto;
+		max-width: 100%;
+		padding-bottom: 5px;
+		color: brown;
+		background-image: url(img/green-back-1.png);		
+	}
+	#input-1-header{
+		margin: auto;
+		max-width: 100%;
+	}
+	.left-me {
+		text-align: left;
+		margin-left: 0px;
+	}
+	#slider-container-wrapper{
+		width: 100%;
+		background-color: black;
+	}
+	#slider-container {
+		position: relative;
+		margin: 3px auto;
+		top: 0px; 
+		left: 0px; 
+		width: 1365px;
+		height: 577px; 
+		overflow: hidden;
+	}
+	#slides{
+		cursor: move; 
+		position: absolute; 
+		left: 0px; 
+		top: 0px; 
+		width: 1365px;
+		height: 577px;
+		overflow: hidden;
+	}
+	.caption{
+		position: absolute; 
+		width: 445px; 
+		height: 500px;
+		top: 480px; 
+		left: 1140px;
+	}
+	.main-wrapper{
+		margin-top: 146px;
+		background-color: black;
+		height: 577px;
+	}
+	.footer-wrapper{
+		background-color: black;
+	}
+	#navbar {
+		vertical-align: middle;
+		text-align: center;
+	}
