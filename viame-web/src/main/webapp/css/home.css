@@ -1,67 +1,132 @@
-	body {
-		min-height: 2000px;
-		padding-top: 50px;
-		background-color: orange;
-		overflow-y:hidden;
-	}
-	#input-wrapper
-	{ 
-		margin: 5px auto;
-		max-width: 1100px;
-	}
-	#input-1 {
-		margin: auto;
-		max-width: 100%;
-		padding-bottom: 5px;
-		color: brown;
-		background-image: url(img/green-back-1.png);		
-	}
-	#input-1-header{
-		margin: auto;
-		max-width: 100%;
-	}
-	.left-me {
-		text-align: left;
-		margin-left: 0px;
-	}
-	#slider-container-wrapper{
-		width: 100%;
-		background-color: black;
-	}
-	#slider-container {
-		position: relative;
-		margin: 3px auto;
-		top: 0px; 
-		left: 0px; 
-		width: 1365px;
-		height: 577px; 
-		overflow: hidden;
-	}
-	#slides{
-		cursor: move; 
-		position: absolute; 
-		left: 0px; 
-		top: 0px; 
-		width: 1365px;
-		height: 577px;
-		overflow: hidden;
-	}
-	.caption{
-		position: absolute; 
-		width: 445px; 
-		height: 500px;
-		top: 480px; 
-		left: 1140px;
-	}
-	.main-wrapper{
-		margin-top: 146px;
-		background-color: black;
-		height: 577px;
-	}
-	.footer-wrapper{
-		background-color: black;
-	}
-	#navbar {
-		vertical-align: middle;
-		text-align: center;
-	}
+@font-face {
+    font-family: Italianno;
+    src: url(../fonts/Italianno-Regular-OTF.otf);
+}
+
+@font-face {
+    font-family: Gidole-Regular;
+    src: url(../fonts/Gidole-Regular.otf);
+}
+
+body {
+	min-height: 2000px;
+	padding-top: 50px;
+	background-color: orange;
+	overflow-y:hidden;
+}
+#navbar {
+	vertical-align: middle;
+	text-align: center;
+	font-family: Italianno;
+    font-size: 5vh;
+}
+
+#call {
+	vertical-align: middle;
+	text-align: center;
+	font-family: Italianno;
+    font-size: 6vh;
+    color: red;
+}
+section { 
+	/* height: 95vh; */
+	height: 100vh;
+	width: 100vw;
+	/* border: 3px solid red; */
+}
+#slider {
+	position: relative;
+	margin: 3px auto;
+	top: 0px; 
+	left: 0px; 
+	width: 100%;
+	/* height: 91.8vh; */ 
+	height: 100vh;
+	overflow: hidden;
+}
+#slides{
+	cursor: move; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	width: 100%;
+	/* height: 91.8vh; */ 
+	height: 100vh;
+	overflow: hidden;
+}
+.caption{
+	position: absolute; 
+	width: 445px; 
+	height: 500px;
+	top: 480px; 
+	left: 1140px;
+}
+#main {
+	background-color: black;
+	/* margin: 3px auto; */
+	border: 1px solid red;
+	height: 100vh;
+	width: 100vw;
+	font-family: Gidole-Regular;
+}
+
+#input-wrapper
+{ 
+	margin: 5px auto;
+	padding-top: 50px;
+}
+#input-1 {
+	margin: auto;
+	max-width: 100%;
+	padding-bottom: 5px;
+	color: brown;
+	background-image: url(../img/green-back-1.png);		
+}
+#input-1-header{
+	margin: auto;
+	max-width: 100%;
+}
+.left-me {
+	text-align: left;
+	margin-left: 0px;
+}
+.footer-wrapper{
+	background-color: black;
+}
+
+/* Google Sign In Button */
+#customBtn {
+     display: inline-block;
+     background: #4285f4;
+     color: white;
+     width: 190px;
+     border-radius: 5px;
+     white-space: nowrap;
+   }
+#customBtn:hover {
+	cursor: pointer;
+}
+
+span.label {
+	font-weight: bold;
+}
+
+span.icon {
+	background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 42px;
+	height: 42px;
+	border-right: #2265d4 1px solid;
+}
+
+span.buttonText {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 42px;
+	padding-right: 42px;
+	font-size: 14px;
+	font-weight: bold;
+	/* Use the Roboto font that is loaded in the <head> */
+	font-family: 'Roboto', sans-serif;
+}

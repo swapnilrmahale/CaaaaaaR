@@ -19,9 +19,11 @@ function onSignIn() {
 
 var slider;
 function carSelector() {
-	console.log(this.value);
-	location.href='#input-wrapper';
+	// console.log(this.value);
+	location.href='#main';
 	//slider.$Pause();
+	// console.log($('#vehicle'));
+	$('#vehicle').multiselect('select', [this.value]);
 }
 
 function abc(slideIndex, fromIndex)
@@ -33,8 +35,26 @@ function abc(slideIndex, fromIndex)
 	}
 }
 
-$(function(){
+function onSuccess(googleUser) {
+    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+  }
+  function onFailure(error) {
+    console.log(error);
+  }
+  function renderButton() {
+    gapi.signin2.render('my-signin2', {
+      'scope': 'https://www.googleapis.com/auth/plus.login',
+      'width': 200,
+      'height': 50,
+      'longtitle': true,
+      'theme': 'dark',
+      'onsuccess': onSuccess,
+      'onfailure': onFailure
+    });
+  }
 
+$(function(){
+	
 	var slider_container_options = { 
 		$AutoPlay: true,
 		//$FillMode: 2,
@@ -49,7 +69,7 @@ $(function(){
 		}
 	};
 
-	slider = new $JssorSlider$('slider-container', slider_container_options);
+	slider = new $JssorSlider$('slider', slider_container_options);
 
 	slider.$On($JssorSlider$.$EVT_PARK, abc);
 

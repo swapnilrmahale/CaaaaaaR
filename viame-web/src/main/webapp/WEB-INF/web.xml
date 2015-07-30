@@ -5,6 +5,6 @@
 <web-app>
   <display-name>viame</display-name>
   <welcome-file-list>
-  		<welcome-file>html/home.html</welcome-file>
+  		<welcome-file>home.html</welcome-file>
   </welcome-file-list>
 </web-app>
