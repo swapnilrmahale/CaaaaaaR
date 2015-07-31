@@ -20,10 +20,18 @@ function onSignIn() {
 var slider;
 function carSelector() {
 	// console.log(this.value);
-	location.href='#main';
+	// location.href='#main';
 	//slider.$Pause();
 	// console.log($('#vehicle'));
+	$('#vehicle').multiselect('deselectAll', false);
+	$('#vehicle').multiselect('updateButtonText');
 	$('#vehicle').multiselect('select', [this.value]);
+	// $('#main').animatescroll({scrollSpeed:2000,easing:'easeOutElastic'});
+	scrollTo('#main', 'easeOutBack');
+}
+
+function scrollTo(dest, effect) {
+	$(dest).animatescroll({scrollSpeed:2000,easing:effect});
 }
 
 function abc(slideIndex, fromIndex)
@@ -55,6 +63,8 @@ function onSuccess(googleUser) {
 
 $(function(){
 	
+	$('body').animatescroll();
+	
 	var slider_container_options = { 
 		$AutoPlay: true,
 		//$FillMode: 2,
@@ -77,6 +87,10 @@ $(function(){
 		$("#city-selector").text($(this).text());
 	});
 
+	$('#driveThrough').on('click', function () {
+		scrollTo('#slider-container', 'easeInBack');
+	});
+	
 	var datetimepickerOption = {
 		format: 'ddd DD-MM-YYYY HH:mm',
 		viewMode: 'months',

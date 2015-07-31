@@ -1,108 +1,118 @@
 @font-face {
-    font-family: Italianno;
-    src: url(../fonts/Italianno-Regular-OTF.otf);
+	font-family: Italianno;
+	src: url(../fonts/Italianno-Regular-OTF.otf);
 }
 
 @font-face {
-    font-family: Gidole-Regular;
-    src: url(../fonts/Gidole-Regular.otf);
+	font-family: Gidole-Regular;
+	src: url(../fonts/Gidole-Regular.otf);
 }
 
 body {
-	min-height: 2000px;
-	padding-top: 50px;
 	background-color: orange;
-	overflow-y:hidden;
+	overflow-y: hidden;
 }
+
+.navbar-custom {
+	background-color: transparent;
+	background-image: none;
+}
+
 #navbar {
 	vertical-align: middle;
 	text-align: center;
 	font-family: Italianno;
-    font-size: 5vh;
+	font-size: 5vh;
 }
 
 #call {
 	vertical-align: middle;
 	text-align: center;
 	font-family: Italianno;
-    font-size: 6vh;
-    color: red;
+	font-size: 6vh;
+	color: red;
 }
-section { 
-	/* height: 95vh; */
+
+section {
 	height: 100vh;
 	width: 100vw;
-	/* border: 3px solid red; */
 }
+
 #slider {
 	position: relative;
-	margin: 3px auto;
-	top: 0px; 
-	left: 0px; 
+	top: 0px;
+	left: 0px;
 	width: 100%;
-	/* height: 91.8vh; */ 
 	height: 100vh;
 	overflow: hidden;
 }
-#slides{
-	cursor: move; 
-	position: absolute; 
-	left: 0px; 
-	top: 0px; 
+
+#slides {
+	cursor: move;
+	position: absolute;
+	left: 0vw;
+	top: 0vh;
 	width: 100%;
-	/* height: 91.8vh; */ 
 	height: 100vh;
 	overflow: hidden;
 }
-.caption{
-	position: absolute; 
-	width: 445px; 
-	height: 500px;
-	top: 480px; 
-	left: 1140px;
+
+.caption {
+	height: 90vh;
+	left: 0vw;
+	position: absolute;
+	top: 8vh;
+	width: 100vw;
+	border: 1px solid red;
 }
+.select-car {
+    position: absolute;
+    top: 75vh;
+    left: 85vw;
+}
+
 #main {
 	background-color: black;
-	/* margin: 3px auto; */
-	border: 1px solid red;
-	height: 100vh;
-	width: 100vw;
 	font-family: Gidole-Regular;
 }
 
-#input-wrapper
-{ 
+#input-wrapper {
 	margin: 5px auto;
 	padding-top: 50px;
 }
+
 #input-1 {
 	margin: auto;
 	max-width: 100%;
 	padding-bottom: 5px;
 	color: brown;
-	background-image: url(../img/green-back-1.png);		
+	background-image: url(../img/green-back-1.png);
 }
-#input-1-header{
+
+#input-1-header {
 	margin: auto;
 	max-width: 100%;
 }
+
 .left-me {
 	text-align: left;
 	margin-left: 0px;
 }
-.footer-wrapper{
+
+.footer-wrapper {
 	background-color: black;
 }
 
 /* Google Sign In Button */
 #customBtn {
-     display: inline-block;
-     background: #4285f4;
-     color: white;
-     width: 190px;
-     border-radius: 5px;
-     white-space: nowrap;
-   }
+	display: inline-block;
+	background: #4285f4;
+	color: white;
+	width: 190px;
+	border-radius: 5px;
+	white-space: nowrap;
+}
+
 #customBtn:hover {
 	cursor: pointer;
 }
