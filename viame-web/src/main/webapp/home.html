@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="google-signin-scope" content="profile email">
-	<meta name="google-signin-client_id" content="878421346792-rk9bvv4ij7cong012m40hk0kfbvehbi7.apps.googleusercontent.com
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id"
+	content="878421346792-rk9bvv4ij7cong012m40hk0kfbvehbi7.apps.googleusercontent.com
 	">
 
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>ViaMe</title>
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>ViaMe</title>
 
-	<!-- Bootstrap -->
-	<link href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-multiselect.css" rel="stylesheet" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-	<link href="css/home.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link
+	href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css"
+	rel="stylesheet">
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="css/bootstrap-multiselect.css" rel="stylesheet" />
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/css/bootstrap-datetimepicker.min.css"
+	rel="stylesheet">
+<link href="css/home.css" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#">ViaMe</a>
 				</div>
@@ -38,9 +46,13 @@
 						<li><a href="#contact-us">Contact</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<a class="navbar-brand"><span id="call">Call Us @ 1800 0000 000</span></a>
-						<li class="dropdown">
-							<a id="city-selector" href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pune <span class="caret"></span></a>
+						<a class="navbar-brand"><span id="call">Call Us @ 1800
+								0000 000</span></a>
+						<li class="dropdown"><a id="city-selector" href="#"
+							class="dropdown-toggle active" data-toggle="dropdown"
+							role="button" aria-haspopup="true" aria-expanded="false">Pune
+								<span class="caret"></span>
+						</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-header">Maharashtra</li>
 								<li><a href="#">Pune</a></li>
@@ -50,11 +62,10 @@
 								<li class="dropdown-header">Karnataka</li>
 								<li><a href="#">Hyderabad</a></li>
 								<li><a href="#">Bengaluru</a></li>
-							</ul>
-						</li>
+							</ul></li>
 						<li>
 							<div class="g-signin2" data-onsuccess="onSignIn"></div>
-						</li> 
+						</li>
 						<!--<select id="location" class="multi-dropdown">
 							<option value="1">Pune</option>
 							<option value="2">Mumbai</option>
@@ -62,42 +73,51 @@
 							<option value="4">Hyderabad</option>
 						</select>	-->
 					</ul>
-				</div><!--/.nav-collapse -->
+				</div>
+				<!--/.nav-collapse -->
 			</div>
 		</nav>
 	</header>
-	
+
 	<section id="slider-container">
 		<div id="slider">
 			<div id="slides" u="slides">
-				<div>
+				<div id="1">
 					<img u="image" src="img/101.jpg" />
 					<div u="caption" class="caption">
-						<button type="button" value="101" class="btn btn-success select-car">Mercedes A Class</button>
+						<header>
+							<h2>Name Of Package</h2>
+						</header>
+						<button type="button" value="101"
+							class="btn btn-success select-car">Mercedes A Class</button>
 					</div>
 				</div>
-				<div>
+				<div id="2">
 					<img u="image" src="img/102.jpg" />
 					<div u="caption" class="caption">
-						<button type="button" value="102" class="btn btn-success select-car">Mercedes G Class</button>
+						<button type="button" value="102"
+							class="btn btn-success select-car">Mercedes G Class</button>
 					</div>
 				</div>
-				<div>
+				<div id="3">
 					<img u="image" src="img/201.jpg" />
 					<div u="caption" class="caption">
-						<button type="button" value="201" class="btn btn-success select-car">Mahindra XUV500</button>
+						<button type="button" value="201"
+							class="btn btn-success select-car">Mahindra XUV500</button>
 					</div>
 				</div>
-				<div>
+				<div id="4">
 					<img u="image" src="img/103.jpg" />
 					<div u="caption" class="caption">
-						<button type="button" value="103" class="btn btn-success select-car">Honda City</button>
+						<button type="button" value="103"
+							class="btn btn-success select-car">Honda City</button>
 					</div>
 				</div>
-				<div>
+				<div id="5">
 					<img u="image" src="img/001.jpg" />
 					<div u="caption" class="caption">
-						<button type="button" value="001" class="btn btn-success select-car">Maruti Swift</button>
+						<button type="button" value="001"
+							class="btn btn-success select-car">Maruti Swift</button>
 					</div>
 				</div>
 			</div>
@@ -107,17 +127,26 @@
 	<section id='main' class='container-fluid'>
 		<div id='input-wrapper'>
 			<div id='input-1' class='row  ui-corner-all'>
-	
+
 				<div id='input-1-header' class='row'>
-					<div id='input-place-from-header' class='col-sm-3 left-me'>&nbsp;&nbsp;<b><span id='driveThrough'>Drive Through</span></b></div>
-					<div id='input-place-from-header' class='col-sm-3 left-me'>&nbsp;&nbsp;<b>Pickup Me From...</b></div>
-					<div id='input-date-from-header' class='col-sm-3 left-me'>&nbsp;&nbsp;<b>Pickup Me Around...</b></div>
-					<div id='input-date-to-header' class='col-sm-3 left-me'>&nbsp;&nbsp;<b>Dropoff Me Around...</b></div>
+					<div id='input-place-from-header' class='col-sm-3 left-me'>
+						&nbsp;&nbsp;<b><span id='driveThrough'>Drive Through</span></b>
+					</div>
+					<div id='input-place-from-header' class='col-sm-3 left-me'>
+						&nbsp;&nbsp;<b>Pickup Me From...</b>
+					</div>
+					<div id='input-date-from-header' class='col-sm-3 left-me'>
+						&nbsp;&nbsp;<b>Pickup Me Around...</b>
+					</div>
+					<div id='input-date-to-header' class='col-sm-3 left-me'>
+						&nbsp;&nbsp;<b>Dropoff Me Around...</b>
+					</div>
 				</div>
-	
+
 				<div id='vehicle-wrapper' class='col-md-3'>
 					<div class="input-group">
-						<select id="vehicle" class='multi-dropdown form-controli input' placeholder="Vehicle">
+						<select id="vehicle" class='multi-dropdown form-controli input'
+							placeholder="Vehicle">
 							<option value="101">Mercedes A</option>
 							<option value="102">Mercedes G</option>
 							<option value="201">XUV 500</option>
@@ -126,10 +155,11 @@
 						</select>
 					</div>
 				</div>
-	
+
 				<div id='input-place-from' class='col-md-3'>
 					<div class="input-group">
-						<select id="from" class='multi-dropdown form-controli input' placeholder="Pickup Me From">
+						<select id="from" class='multi-dropdown form-controli input'
+							placeholder="Pickup Me From">
 							<option value="1">Swargate</option>
 							<option value="2">Shivaji Nagar</option>
 							<option value="3">Pune Station</option>
@@ -137,56 +167,60 @@
 						</select>
 					</div>
 				</div>
-	
+
 				<div id='input-date-from' class='col-md-3'>
 					<div id='date-from' class='input-group date'>
-						<input type='text' class="form-control" />
-						<span class="input-group-addon">
-							<span class="glyphicon glyphicon-calendar"></span>
+						<input type='text' class="form-control" /> <span
+							class="input-group-addon"> <span
+							class="glyphicon glyphicon-calendar"></span>
 						</span>
 					</div>
 				</div>
-	
+
 				<div id='input-date-to' class='col-md-3'>
 					<div id='date-to' class='input-group date'>
-						<input type='text' class="form-control" />
-						<span class="input-group-addon">
-							<span class="glyphicon glyphicon-calendar"></span>
+						<input type='text' class="form-control" /> <span
+							class="input-group-addon"> <span
+							class="glyphicon glyphicon-calendar"></span>
 						</span>
 					</div>
 				</div>
-	
+
 			</div>
-	
+
 		</div>
-		
-		<div class="g-signin2" data-onsuccess="onSignIn"></div>
-		
+
 	</section>
-	
+
 	<section id='about-us' class='container-fluid'>
-		<div id="my-signin2" class="g-signin2" data-width="300" data-height="200" data-longtitle="true">
+		<div id='gSign'>
+			<div id="my-signin2" class="g-signin2" data-width="300"
+				data-height="200" data-longtitle="true"></div>
+		</div>
 		This is for showing About Us
 	</section>
-	
-	<section id='contact-us' class='container-fluid'>
-		This is for showing Contact Us
-	</section>
-	
-	<footer class='container-fluid footer-wrapper'>
-		This is for showing Footer Content
-	</footer> 
+
+	<section id='contact-us' class='container-fluid'>This is for
+		showing Contact Us</section>
+
+	<footer class='container-fluid footer-wrapper'> This is for
+		showing Footer Content </footer>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/js/bootstrap-datetimepicker.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/js/bootstrap-datetimepicker.min.js"></script>
 	<script src="js/bootstrap-multiselect.js" type="text/javascript"></script>
 	<script src="js/jssor.slider.mini.js"></script>
 	<script src="js/animatescroll.min.js"></script>
+	<!-- <script src="js/google.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
 	<script src="js/home.js" type="text/javascript"></script>
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 </html>

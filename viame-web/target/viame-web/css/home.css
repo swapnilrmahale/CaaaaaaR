@@ -57,6 +57,12 @@ section {
 	overflow: hidden;
 }
 
+#1 div.caption header h2 {
+	position: absolute;
+	top: 4vh;
+	left: 20vw;
+}
+
 .caption {
 	height: 90vh;
 	left: 0vw;
@@ -65,10 +71,11 @@ section {
 	width: 100vw;
 	border: 1px solid red;
 }
+
 .select-car {
-    position: absolute;
-    top: 75vh;
-    left: 85vw;
+	position: absolute;
+	top: 75vh;
+	left: 85vw;
 }
 
 #main {
@@ -103,7 +110,10 @@ section {
 	background-color: black;
 }
 
-/* Google Sign In Button */
+#gSign {
+	padding-top: 50px;
+}
+/* Google Sign In Button 
 #customBtn {
 	display: inline-block;
 	background: #4285f4;
@@ -137,6 +147,5 @@ span.buttonText {
 	padding-right: 42px;
 	font-size: 14px;
 	font-weight: bold;
-	/* Use the Roboto font that is loaded in the <head> */
 	font-family: 'Roboto', sans-serif;
-}
+}*/
