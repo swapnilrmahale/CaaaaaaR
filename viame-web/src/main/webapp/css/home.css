@@ -38,6 +38,11 @@ section {
 	width: 100vw;
 }
 
+.wrapper {
+	margin: 5px auto;
+	padding-top: 50px;
+}
+
 #slider {
 	position: relative;
 	top: 0px;
@@ -83,11 +88,6 @@ section {
 	font-family: Gidole-Regular;
 }
 
-#input-wrapper {
-	margin: 5px auto;
-	padding-top: 50px;
-}
-
 #input-1 {
 	margin: auto;
 	max-width: 100%;
@@ -106,46 +106,15 @@ section {
 	margin-left: 0px;
 }
 
-.footer-wrapper {
+footer {
 	background-color: black;
-}
-
-#gSign {
-	padding-top: 50px;
-}
-/* Google Sign In Button 
-#customBtn {
-	display: inline-block;
-	background: #4285f4;
+	height: 3vh;
+	left: 0;
+	position: fixed;
+	top: 97vh;
+	width: 100vw;
 	color: white;
-	width: 190px;
-	border-radius: 5px;
-	white-space: nowrap;
-}
-
-#customBtn:hover {
-	cursor: pointer;
-}
-
-span.label {
-	font-weight: bold;
-}
-
-span.icon {
-	background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
-	display: inline-block;
+	font-family: Verdana;
 	vertical-align: middle;
-	width: 42px;
-	height: 42px;
-	border-right: #2265d4 1px solid;
+	text-align: center;
 }
-
-span.buttonText {
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 42px;
-	padding-right: 42px;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: 'Roboto', sans-serif;
-}*/
