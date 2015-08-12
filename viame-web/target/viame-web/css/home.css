@@ -62,19 +62,55 @@ section {
 	overflow: hidden;
 }
 
-#1 div.caption header h2 {
+#slides div div.caption header h2 {
+	left: 45vw;
 	position: absolute;
-	top: 4vh;
-	left: 20vw;
+	top: -2vh;
+}
+
+.common-features {
+	position: absolute;
+	left: 80vw;
+	top: 18vh;
+}
+
+.common-features ul li {
+	/* border: 1px solid green; */
+	height: 10vh;
+	list-style: outside none none;
+	width: 15vw;
+	font-family: Verdana;
+	color: cyan;
+	font-stretch: extra-expanded;
+	font-style: oblique;
+	cursor: pointer;
+}
+
+.package-specific {
+	position: absolute;
+	left: 5vw;
+	top: 28vh;
+}
+
+.package-specific ul li {
+	/* border: 1px solid green; */
+	height: 10vh;
+	list-style: outside none none;
+	width: 15vw;
+	font-family: Verdana;
+	color: cyan;
+	font-stretch: extra-expanded;
+	font-style: oblique;
+	cursor: pointer;
 }
 
 .caption {
-	height: 90vh;
+	height: 88vh;
 	left: 0vw;
 	position: absolute;
 	top: 8vh;
 	width: 100vw;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .select-car {

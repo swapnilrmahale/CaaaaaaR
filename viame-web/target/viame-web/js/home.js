@@ -1,4 +1,6 @@
 var slider;
+
+/*
 function carSelector() {
 	// console.log(this.value);
 	// location.href='#main';
@@ -10,22 +12,27 @@ function carSelector() {
 	// $('#main').animatescroll({scrollSpeed:2000,easing:'easeOutElastic'});
 	scrollTo('#main', 'easeOutBack');
 }
+*/
+function abc(slideIndex, fromIndex) {
+	if (slideIndex == 0) {
+		/*
+		$(".select-car").each(function() {
+			$(this).on("click", carSelector);
+		});
+		*/
+		$('aside ul li').tooltip(); 
+	}
+}
+
 
 function scrollTo(dest, effect) {
 	console.log('Scrolling...');
 	$(dest).animatescroll({
-		scrollSpeed : 2000,
+		scrollSpeed : 3000,
 		easing : effect
 	});
 }
 
-function abc(slideIndex, fromIndex) {
-	if (slideIndex == 0) {
-		$(".select-car").each(function() {
-			$(this).on("click", carSelector);
-		});
-	}
-}
 
 $(function() {
 
@@ -36,6 +43,20 @@ $(function() {
 		$('header nav').attr('background-color', 'black');
 		return true;
 	});
+	
+	$('aside ul li').tooltip(); 
+	
+	$('aside ul').each(function() {
+		$(this).on('click mouseover focus', function(event) {
+			console.log("Focus : " + event.type);
+			slider.$Pause();
+		}).on('mouseout mouseleave',function(event){
+			console.log("Blur : " + event.type);
+			slider.$Start();
+		});
+		
+	});
+	
 	
 	var slider_container_options = {
 		$AutoPlay : true,
@@ -54,7 +75,9 @@ $(function() {
 	slider = new $JssorSlider$('slider', slider_container_options);
 
 	slider.$On($JssorSlider$.$EVT_PARK, abc);
-
+	
+	/*
+		
 	$(".dropdown-menu li a").click(function() {
 		$("#city-selector").text($(this).text());
 	});
@@ -86,4 +109,5 @@ $(function() {
 		$('#date-to').data("DateTimePicker").minDate(e.date);
 		$('#date-to').data("DateTimePicker").enable();
 	});
+	*/
 });
