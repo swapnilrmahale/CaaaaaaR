@@ -21,5 +21,5 @@ slider.controller('SliderController', function($scope){
 footer.controller('FooterController', function($scope){
 	$scope.Footer = Footer;
 });
-`
+
 var app = angular.module('caar', ['menu', 'slider', 'footer']);

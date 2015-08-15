@@ -21,8 +21,8 @@ body {
 #navbar {
 	vertical-align: middle;
 	text-align: center;
-	font-family: Italianno;
-	font-size: 5vh;
+	font-family: cursive;
+	font-size: 4vh;
 }
 
 #call {
@@ -80,9 +80,8 @@ section {
 	list-style: outside none none;
 	width: 15vw;
 	font-family: Verdana;
-	color: cyan;
+	color: #430D2B;
 	font-stretch: extra-expanded;
-	font-style: oblique;
 	cursor: pointer;
 }
 
@@ -100,7 +99,6 @@ section {
 	font-family: Verdana;
 	color: cyan;
 	font-stretch: extra-expanded;
-	font-style: oblique;
 	cursor: pointer;
 }
 
@@ -117,6 +115,10 @@ section {
 	position: absolute;
 	top: 75vh;
 	left: 85vw;
+}
+
+#whywe div.wrapper {
+	border: 1px solid red;
 }
 
 #main {

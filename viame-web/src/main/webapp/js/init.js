@@ -15,7 +15,6 @@ MenuItems.push(new _MenuItem('#', 'Home'));
 MenuItems.push(new _MenuItem('#packages', 'Packages'));
 MenuItems.push(new _MenuItem('#whywe', 'Why We ?'));
 MenuItems.push(new _MenuItem('#aboutus', 'About-Us'));
-MenuItems.push(new _MenuItem('#contactus', 'Contact-Us'));
 
 var _Feature = function(name, oneLiner) {
 	this.name = name;
@@ -26,7 +25,7 @@ var cFeatures = new Array();
 cFeatures.push(new _Feature('Water Bottle', 'Free Water Bottle'));
 cFeatures.push(new _Feature('Chocolates', 'One Liner About Chocolates'));
 cFeatures.push(new _Feature('XYZ Feature', 'One Liner About XYZ'));
-cFeatures.push(new _Feature('ABC', 'One Liner About ABC'));
+
 cFeatures.push(new _Feature('Another Feature', 'One Liner About Another Feature'));
 
 var _Package = function(id, name, img, pFeatures, cFeatures) {
@@ -40,34 +39,36 @@ var _Package = function(id, name, img, pFeatures, cFeatures) {
 var Packages = new Array();
 
 var pFeatures = new Array();
-pFeatures.push(new _Feature('Package 1 Feature 1', 'One Liner About Package 1 Feature 1'));
-pFeatures.push(new _Feature('Package 1 Feature 2', 'One Liner About Package 1 Feature 2'));
-pFeatures.push(new _Feature('Package 1 Feature 3', 'One Liner About Package 1 Feature 3'));
-Packages.push(new _Package('1', 'Package 1', 'img/101.jpg', pFeatures, cFeatures));
+pFeatures.push(new _Feature('Mumbai Airport Drop', ''));
+pFeatures.push(new _Feature('Mumbai Airport Pickup', ''));
+pFeatures.push(new _Feature('Pune Airport Drop', ''));
+pFeatures.push(new _Feature('Pune Airport Pickup', ''));
+Packages.push(new _Package('1', 'Airport Services', 'img/103.jpg', pFeatures, cFeatures));
 
 pFeatures = [];
-pFeatures.push(new _Feature('Package 2 Feature 1', 'One Liner About Package 2 Feature 1'));
-pFeatures.push(new _Feature('Package 2 Feature 2', 'One Liner About Package 2 Feature 2'));
-pFeatures.push(new _Feature('Package 2 Feature 3', 'One Liner About Package 2 Feature 3'));
-Packages.push(new _Package('2', 'Package 2', 'img/102.jpg', pFeatures, cFeatures));
+pFeatures.push(new _Feature('Lavasa', ''));
+pFeatures.push(new _Feature('Khadakwasla Sinhgad', ''));
+pFeatures.push(new _Feature('Imagica', ''));
+Packages.push(new _Package('2', 'Pune One Day Trips', 'img/103.jpg', pFeatures, cFeatures));
 
 pFeatures = [];
-pFeatures.push(new _Feature('Package 3 Feature 1', 'One Liner About Package 3 Feature 1'));
-pFeatures.push(new _Feature('Package 3 Feature 2', 'One Liner About Package 3 Feature 2'));
-pFeatures.push(new _Feature('Package 3 Feature 3', 'One Liner About Package 3 Feature 3'));
-Packages.push(new _Package('3', 'Package 3', 'img/201.jpg', pFeatures, cFeatures));
+pFeatures.push(new _Feature('Ashtavinayak Darshan', ''));
+pFeatures.push(new _Feature('Shirdi & Shanishinganapur', ''));
+pFeatures.push(new _Feature('Akkalkot Gangapur Tuljapur', ''));
+Packages.push(new _Package('3', 'Pilgrimage Trips', 'img/103.jpg', pFeatures, cFeatures));
 
 pFeatures = [];
-pFeatures.push(new _Feature('Package 4 Feature 1', 'One Liner About Package 4 Feature 1'));
-pFeatures.push(new _Feature('Package 4 Feature 2', 'One Liner About Package 4 Feature 2'));
-pFeatures.push(new _Feature('Package 4 Feature 3', 'One Liner About Package 4 Feature 3'));
-Packages.push(new _Package('4', 'Package 4', 'img/103.jpg', pFeatures, cFeatures));
+pFeatures.push(new _Feature('Mahabaleshwar', ''));
+pFeatures.push(new _Feature('Pachgani', ''));
+pFeatures.push(new _Feature('Tapola', ''));
+pFeatures.push(new _Feature('Satara Kaspathar', ''));
+pFeatures.push(new _Feature('Lonawala Khandala', ''));
+Packages.push(new _Package('4', 'Weekend Gateaways', 'img/103.jpg', pFeatures, cFeatures));
 
 pFeatures = [];
-pFeatures.push(new _Feature('Package 5 Feature 1', 'One Liner About Package 5 Feature 1'));
-pFeatures.push(new _Feature('Package 5 Feature 2', 'One Liner About Package 5 Feature 2'));
-pFeatures.push(new _Feature('Package 5 Feature 3', 'One Liner About Package 5 Feature 3'));
-Packages.push(new _Package('5', 'Package 5', 'img/001.jpg', pFeatures, cFeatures));
+pFeatures.push(new _Feature('Konkan', ''));
+pFeatures.push(new _Feature('Goa', ''));
+Packages.push(new _Package('5', 'Long Trips', 'img/103.jpg', pFeatures, cFeatures));
 
 var _Copyright = function(part1, part2) {
 	this.part1 = part1;
