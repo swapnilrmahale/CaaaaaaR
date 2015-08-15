@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: orange;
+	background-color: white;
 	overflow-y: hidden;
 }
 
@@ -38,6 +38,11 @@ section {
 	width: 100vw;
 }
 
+.wrapper {
+	margin: 5px auto;
+	padding-top: 50px;
+}
+
 #slider {
 	position: relative;
 	top: 0px;
@@ -57,19 +62,55 @@ section {
 	overflow: hidden;
 }
 
-#1 div.caption header h2 {
+#slides div div.caption header h2 {
+	left: 45vw;
 	position: absolute;
-	top: 4vh;
-	left: 20vw;
+	top: -2vh;
+}
+
+.common-features {
+	position: absolute;
+	left: 80vw;
+	top: 18vh;
+}
+
+.common-features ul li {
+	/* border: 1px solid green; */
+	height: 10vh;
+	list-style: outside none none;
+	width: 15vw;
+	font-family: Verdana;
+	color: cyan;
+	font-stretch: extra-expanded;
+	font-style: oblique;
+	cursor: pointer;
+}
+
+.package-specific {
+	position: absolute;
+	left: 5vw;
+	top: 28vh;
+}
+
+.package-specific ul li {
+	/* border: 1px solid green; */
+	height: 10vh;
+	list-style: outside none none;
+	width: 15vw;
+	font-family: Verdana;
+	color: cyan;
+	font-stretch: extra-expanded;
+	font-style: oblique;
+	cursor: pointer;
 }
 
 .caption {
-	height: 90vh;
+	height: 88vh;
 	left: 0vw;
 	position: absolute;
 	top: 8vh;
 	width: 100vw;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .select-car {
@@ -81,11 +122,6 @@ section {
 #main {
 	background-color: black;
 	font-family: Gidole-Regular;
-}
-
-#input-wrapper {
-	margin: 5px auto;
-	padding-top: 50px;
 }
 
 #input-1 {
@@ -106,46 +142,15 @@ section {
 	margin-left: 0px;
 }
 
-.footer-wrapper {
+footer {
 	background-color: black;
-}
-
-#gSign {
-	padding-top: 50px;
-}
-/* Google Sign In Button 
-#customBtn {
-	display: inline-block;
-	background: #4285f4;
+	height: 3vh;
+	left: 0;
+	position: fixed;
+	top: 97vh;
+	width: 100vw;
 	color: white;
-	width: 190px;
-	border-radius: 5px;
-	white-space: nowrap;
-}
-
-#customBtn:hover {
-	cursor: pointer;
-}
-
-span.label {
-	font-weight: bold;
-}
-
-span.icon {
-	background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
-	display: inline-block;
+	font-family: Verdana;
 	vertical-align: middle;
-	width: 42px;
-	height: 42px;
-	border-right: #2265d4 1px solid;
+	text-align: center;
 }
-
-span.buttonText {
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 42px;
-	padding-right: 42px;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: 'Roboto', sans-serif;
-}*/
