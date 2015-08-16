@@ -162,18 +162,12 @@
 		<div class="wrapper">This is for showing Packages</div>
 	</section>
 
-	<section id='whywe' class='container'>
+	<section id='whywe' class='container' ng-controller="WhyWeController">
 		<div class="wrapper">This is for showing Why We ?
-		<p>Book a car with us and we guarantee you convenience, quality and
-comfort to its best.
-</p>
+		<ul>
+			<li ng-repeat="bullet in WhyWe.bullets" ng-bind="bullet"></li>
+		</ul>
 
-<p>For local trips, we do not have a constraint of minimum or maximum
-hours which are charged.</p>
-
-<p>Customer satisfaction is our true motive.</p>
-
-<p>We have a team of most well behaved and courteous drivers</p>
 		</div>
 	</section>
 
