@@ -72,18 +72,20 @@
 						</header>
 						<aside class="package-specific">
 							<ul>
-								<li ng-repeat="feature in package.pFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip"><span
-									class="glyphicon glyphicon-hand-right"></span><span ng-bind="feature.name"></span></li>
+								<li ng-repeat="feature in package.pFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip">
+									<span ng-bind="feature.name"></span>
+								</li>
 							</ul>
 						</aside>
 						<aside class="common-features">
 							<ul>
-								<li ng-repeat="feature in package.cFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip"><span 
-									class="glyphicon glyphicon-hand-right"></span><span ng-bind="feature.name"></span></li>
+								<li ng-repeat="feature in package.cFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip">
+									<span ng-bind="feature.name"></span>
+								</li>
 							</ul>
 						</aside>
-						<button type="button" value="101"
-							class="btn btn-success select-car">Mercedes A Class</button>
+						<!-- <button type="button" value="101"
+							class="btn btn-success select-car">Mercedes A Class</button>-->
 					</div>
 				</div>
 			</div>
@@ -160,7 +162,7 @@
 	</section> -->
 
 	<section id='packages' class='container'>
-		<div class="wrapper">This is for showing Packages</div>
+		<div class="wrapper">This Section is under Construction.</div>
 	</section>
 
 	<section id='whywe' class='container' ng-controller="WhyWeController">
@@ -174,11 +176,11 @@
 	</section>
 
 	<section id='aboutus' class='container'>
-		<div class="wrapper">This is for showing About Us</div>
+		<div class="wrapper">This Section is under Construction.</div>
 	</section>
 
 	<section id='contactus' class='container'>
-		<div class="wrapper">This is for showing Contact Us</div>
+		<div class="wrapper">This Section is under Construction.</div>
 	</section>
 
 	<footer class='container-fluid footer-wrapper' ng-controller="FooterController">

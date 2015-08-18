@@ -63,24 +63,26 @@ section {
 }
 
 #slides div div.caption header h2 {
-	left: 45vw;
+	left: 40vw;
 	position: absolute;
-	top: -2vh;
+	top: 1vh;
+	font-size: 3rem;
+	color: cyan;
 }
 
 .common-features {
 	position: absolute;
 	left: 80vw;
 	top: 18vh;
+	font-size: 2rem;
 }
 
 .common-features ul li {
-	/* border: 1px solid green; */
 	height: 10vh;
 	list-style: outside none none;
 	width: 15vw;
 	font-family: Verdana;
-	color: #430D2B;
+	color: orange;
 	font-stretch: extra-expanded;
 	cursor: pointer;
 }
@@ -88,18 +90,29 @@ section {
 .package-specific {
 	position: absolute;
 	left: 5vw;
-	top: 28vh;
+	top: 18vh;
+	font-size: 2rem;
 }
 
 .package-specific ul li {
-	/* border: 1px solid green; */
 	height: 10vh;
 	list-style: outside none none;
 	width: 15vw;
 	font-family: Verdana;
-	color: cyan;
+	color: orange;
 	font-stretch: extra-expanded;
 	cursor: pointer;
+}
+
+.package-specific ul li:before, .common-features ul li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content:"\e127";
+    font-family: 'Glyphicons Halflings';
+    font-size: 2rem;
+    float: left;
+    margin-top: 3px;
+    margin-left: -30px;
+    color: orange;
 }
 
 .caption {
@@ -108,7 +121,6 @@ section {
 	position: absolute;
 	top: 8vh;
 	width: 100vw;
-	/* border: 1px solid red; */
 }
 
 .select-car {
@@ -118,13 +130,13 @@ section {
 }
 
 #whywe div.wrapper {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 #reasons {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 2rem;
-    margin-top: 10vh;
+    margin-top: 6vh;
     color: coral;	
 }
 
