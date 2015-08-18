@@ -8,7 +8,7 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>It's Me...</title>
 
-	<!-- Bootstrap -->
+<!-- Bootstrap -->
 <link
 	href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css"
 	rel="stylesheet">
@@ -90,6 +90,7 @@
 		</div>
 	</section>
 
+	
 	<!--  <section id='main' class='container'>
 		<div class="wrapper">
 			<div id='input-1' class='row  ui-corner-all'>
@@ -163,11 +164,12 @@
 	</section>
 
 	<section id='whywe' class='container' ng-controller="WhyWeController">
-		<div class="wrapper">This is for showing Why We ?
-		<ul>
-			<li ng-repeat="bullet in WhyWe.bullets" ng-bind="bullet"></li>
-		</ul>
-
+		<div class="wrapper">
+			<article id="reasons">
+				<ul>
+					<li ng-repeat="bullet in WhyWe.bullets" ng-bind="bullet"></li>
+				</ul>
+			</article>
 		</div>
 	</section>
 

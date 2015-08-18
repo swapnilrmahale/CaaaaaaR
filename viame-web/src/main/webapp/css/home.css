@@ -121,6 +121,17 @@ section {
 	border: 1px solid red;
 }
 
+#reasons {
+    border: 1px solid red;
+    font-size: 2rem;
+    margin-top: 10vh;
+    color: coral;	
+}
+
+#reasons ul li {
+	margin: 33px 0;
+}
+
 #main {
 	background-color: black;
 	font-family: Gidole-Regular;
