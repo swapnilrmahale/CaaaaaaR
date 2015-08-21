@@ -22,9 +22,10 @@
 <link href="css/home.css" rel="stylesheet">
 </head>
 <body>
+	
 	<header ng-controller="MenuController">
 	<!-- <header> -->
-		<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed"
@@ -43,17 +44,7 @@
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<a class="navbar-brand"><span id="call">Call Us @ 1800
-								0000 000</span></a>
-						<li class="dropdown"><a id="city-selector" href="#"
-							class="dropdown-toggle active" data-toggle="dropdown"
-							role="button" aria-haspopup="true" aria-expanded="false">Pune
-								<span class="caret"></span>
-						</a>
-							<ul class="dropdown-menu">
-								<!--  <li class="dropdown-header">Maharashtra</li> -->
-								<li><a href="#">Pune</a></li>
-							</ul></li>
+						<a class="navbar-brand"><span id="call">Call Us @ 1800 0000 000</span></a>
 					</ul>
 				</div>
 				<!--/.nav-collapse -->
@@ -64,102 +55,31 @@
 	<section id="slider-container" ng-controller="SliderController">
 		<div id="slider">
 			<div id="slides" u="slides">
-				<div id="{{ package.id }}" ng-repeat="package in Packages">
+				<div id="{{ package.id }}" ng-repeat="package in Packages.packagesList">
 					<img u="image" ng-src="{{package.img}}" />
 					<div u="caption" class="caption">
 						<header>
 							<h2 ng-bind="package.name"></h2>
 						</header>
-						<aside class="package-specific">
+						<aside class="package-specific features">
 							<ul>
 								<li ng-repeat="feature in package.pFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip">
 									<span ng-bind="feature.name"></span>
 								</li>
 							</ul>
 						</aside>
-						<aside class="common-features">
-							<ul>
-								<li ng-repeat="feature in package.cFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip">
-									<span ng-bind="feature.name"></span>
-								</li>
-							</ul>
-						</aside>
-						<!-- <button type="button" value="101"
-							class="btn btn-success select-car">Mercedes A Class</button>-->
 					</div>
 				</div>
 			</div>
 		</div>
+		<aside class="common-features features">
+			<ul>
+				<li ng-repeat="feature in Packages.cFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip">
+					<span ng-bind="feature.name"></span>
+				</li>
+			</ul>
+		</aside>
 	</section>
-
-	
-	<!--  <section id='main' class='container'>
-		<div class="wrapper">
-			<div id='input-1' class='row  ui-corner-all'>
-
-				<div id='input-1-header' class='row'>
-					<div id='input-place-from-header' class='col-sm-3 left-me'>
-						&nbsp;&nbsp;<b><span id='driveThrough'>Drive Through</span></b>
-					</div>
-					<div id='input-place-from-header' class='col-sm-3 left-me'>
-						&nbsp;&nbsp;<b>Pickup Me From...</b>
-					</div>
-					<div id='input-date-from-header' class='col-sm-3 left-me'>
-						&nbsp;&nbsp;<b>Pickup Me Around...</b>
-					</div>
-					<div id='input-date-to-header' class='col-sm-3 left-me'>
-						&nbsp;&nbsp;<b>Dropoff Me Around...</b>
-					</div>
-				</div>
-
-				<div id='vehicle-wrapper' class='col-md-3'>
-					<div class="input-group">
-						<select id="vehicle" class='multi-dropdown form-controli input'
-							placeholder="Vehicle">
-							<option value="101">Mercedes A</option>
-							<option value="102">Mercedes G</option>
-							<option value="201">XUV 500</option>
-							<option value="103">Honda City</option>
-							<option value="001">Maruti Swift</option>
-						</select>
-					</div>
-				</div>
-
-				<div id='input-place-from' class='col-md-3'>
-					<div class="input-group">
-						<select id="from" class='multi-dropdown form-controli input'
-							placeholder="Pickup Me From">
-							<option value="1">Swargate</option>
-							<option value="2">Shivaji Nagar</option>
-							<option value="3">Pune Station</option>
-							<option value="4">Nigdi</option>
-						</select>
-					</div>
-				</div>
-
-				<div id='input-date-from' class='col-md-3'>
-					<div id='date-from' class='input-group date'>
-						<input type='text' class="form-control" /> <span
-							class="input-group-addon"> <span
-							class="glyphicon glyphicon-calendar"></span>
-						</span>
-					</div>
-				</div>
-
-				<div id='input-date-to' class='col-md-3'>
-					<div id='date-to' class='input-group date'>
-						<input type='text' class="form-control" /> <span
-							class="input-group-addon"> <span
-							class="glyphicon glyphicon-calendar"></span>
-						</span>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-
-	</section> -->
 
 	<section id='packages' class='container'>
 		<div class="wrapper">This Section is under Construction.</div>
@@ -179,9 +99,7 @@
 		<div class="wrapper">This Section is under Construction.</div>
 	</section>
 
-	<section id='contactus' class='container'>
-		<div class="wrapper">This Section is under Construction.</div>
-	</section>
+	<span ng-controller="MenuController" class="down glyphicon" ng-click="scroll()" ng-class="{'glyphicon-menu-down' : direction, 'glyphicon-menu-up' : !direction}"></span>
 
 	<footer class='container-fluid footer-wrapper' ng-controller="FooterController">
 		<span ng-bind="Footer.copyright.part1"></span>

@@ -11,7 +11,7 @@ var _MenuItem = function(href, dName) {
 };
 var MenuItems = new Array();
 
-MenuItems.push(new _MenuItem('#', 'Home'));
+MenuItems.push(new _MenuItem('#slider-container', 'Home'));
 MenuItems.push(new _MenuItem('#packages', 'Packages'));
 MenuItems.push(new _MenuItem('#whywe', 'Why We ?'));
 MenuItems.push(new _MenuItem('#aboutus', 'About-Us'));
@@ -22,7 +22,7 @@ var _Feature = function(name, oneLiner) {
 }
 
 var cFeatures = new Array();
-cFeatures.push(new _Feature('', 'Free Water Bottle'));
+cFeatures.push(new _Feature('Water Bottle', 'Free Water Bottle'));
 cFeatures.push(new _Feature('Chocolates', 'One Liner About Chocolates'));
 cFeatures.push(new _Feature('XYZ Feature', 'One Liner About XYZ'));
 

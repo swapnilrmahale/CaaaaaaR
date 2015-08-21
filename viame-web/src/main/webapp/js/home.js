@@ -1,32 +1,20 @@
 var slider;
 
-/*
-function carSelector() {
-	// console.log(this.value);
-	// location.href='#main';
-	// slider.$Pause();
-	// console.log($('#vehicle'));
-	$('#vehicle').multiselect('deselectAll', false);
-	$('#vehicle').multiselect('updateButtonText');
-	$('#vehicle').multiselect('select', [ this.value ]);
-	// $('#main').animatescroll({scrollSpeed:2000,easing:'easeOutElastic'});
-	scrollTo('#main', 'easeOutBack');
-}
-*/
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
 function abc(slideIndex, fromIndex) {
 	if (slideIndex == 0) {
-		/*
-		$(".select-car").each(function() {
-			$(this).on("click", carSelector);
-		});
-		*/
 		$('aside ul li').tooltip(); 
 	}
 }
 
 
 function scrollTo(dest, effect) {
-	console.log('Scrolling...');
 	$(dest).animatescroll({
 		scrollSpeed : 3000,
 		easing : effect
@@ -46,18 +34,17 @@ $(function() {
 	
 	$('aside ul li').tooltip(); 
 	
-	$('aside ul').each(function() {
-		$(this).on('click mouseover focus', function(event) {
-			console.log("Focus : " + event.type);
-			slider.$Pause();
-		}).on('mouseout mouseleave',function(event){
-			console.log("Blur : " + event.type);
-			slider.$Start();
-		});
-		
+	$('aside.package-specific').on({
+		mouseenter: function () {
+			slider.$Pause();     
+	    },
+	    mouseleave: function () {
+			slider.$Play();
+	    }
 	});
-	
-	
+
+	/*$('.down').on('click', );*/
+
 	var slider_container_options = {
 		$AutoPlay : true,
 		// $FillMode: 2,
@@ -77,37 +64,29 @@ $(function() {
 	slider.$On($JssorSlider$.$EVT_PARK, abc);
 	
 	/*
-		
-	$(".dropdown-menu li a").click(function() {
-		$("#city-selector").text($(this).text());
-	});
+    function ScaleSlider() {
+        var windowWidth = $(window).width();
 
-	$('#driveThrough').on('click', function() {
-		scrollTo('#slider-container', 'easeInBack');
-	});
+        if (windowWidth) {
+            var windowHeight = $(window).height();
+            var originalWidth = slider.$OriginalWidth();
+            var originalHeight = slider.$OriginalHeight();
 
-	var datetimepickerOption = {
-		format : 'ddd DD-MM-YYYY HH:mm',
-		viewMode : 'months',
-		stepping : 15
-	};
+            if (originalWidth / windowWidth > originalHeight / windowHeight) {
+                slider.$ScaleHeight(windowHeight);
+            }
+            else {
+                slider.$ScaleWidth(windowWidth);
+            }
+        }
+        else
+            window.setTimeout(ScaleSlider, 30);
+    }
 
-	$('.multi-dropdown').multiselect({
-		buttonWidth : '200',
-		enableFiltering : true
-	});
+    ScaleSlider();
+    $(window).bind("load", ScaleSlider);
+    $(window).bind("resize", ScaleSlider);
+    $(window).bind("orientationchange", ScaleSlider);
 
-	$('#date-from').datetimepicker(datetimepickerOption);
-	$('#date-from').data("DateTimePicker").minDate(
-			moment().add(1, 'd').format(datetimepickerOption.format));
-
-	$('#date-to').datetimepicker(datetimepickerOption);
-	$('#date-to').data("DateTimePicker").disable()
-
-	$('#date-from').on("dp.change", function(e) {
-		console.log('setting min date for to picker');
-		$('#date-to').data("DateTimePicker").minDate(e.date);
-		$('#date-to').data("DateTimePicker").enable();
-	});
 	*/
 });

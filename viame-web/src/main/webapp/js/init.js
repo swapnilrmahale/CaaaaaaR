@@ -28,34 +28,33 @@ cFeatures.push(new _Feature('XYZ Feature', 'One Liner About XYZ'));
 
 cFeatures.push(new _Feature('Another Feature', 'One Liner About Another Feature'));
 
-var _Package = function(id, name, img, pFeatures, cFeatures) {
+var _Package = function(id, name, img, pFeatures) {
 	this.id = id;
 	this.name = name;
 	this.img = img;
 	this.pFeatures = pFeatures;
-	this.cFeatures = cFeatures;
 }
 
-var Packages = new Array();
+var packagesList = new Array();
 
 var pFeatures = new Array();
 pFeatures.push(new _Feature('Mumbai Airport Drop', ''));
 pFeatures.push(new _Feature('Mumbai Airport Pickup', ''));
 pFeatures.push(new _Feature('Pune Airport Drop', ''));
 pFeatures.push(new _Feature('Pune Airport Pickup', ''));
-Packages.push(new _Package('1', 'Airport Services', 'img/103.jpg', pFeatures, cFeatures));
+packagesList.push(new _Package('1', 'Airport Services', 'img/103.jpg', pFeatures));
 
 pFeatures = [];
 pFeatures.push(new _Feature('Lavasa', ''));
 pFeatures.push(new _Feature('Khadakwasla Sinhgad', ''));
 pFeatures.push(new _Feature('Imagica', ''));
-Packages.push(new _Package('2', 'Pune One Day Trips', 'img/103.jpg', pFeatures, cFeatures));
+packagesList.push(new _Package('2', 'Pune One Day Trips', 'img/103.jpg', pFeatures));
 
 pFeatures = [];
 pFeatures.push(new _Feature('Ashtavinayak Darshan', ''));
 pFeatures.push(new _Feature('Shirdi & Shanishinganapur', ''));
 pFeatures.push(new _Feature('Akkalkot Gangapur Tuljapur', ''));
-Packages.push(new _Package('3', 'Pilgrimage Trips', 'img/103.jpg', pFeatures, cFeatures));
+packagesList.push(new _Package('3', 'Pilgrimage Trips', 'img/103.jpg', pFeatures));
 
 pFeatures = [];
 pFeatures.push(new _Feature('Mahabaleshwar', ''));
@@ -63,13 +62,19 @@ pFeatures.push(new _Feature('Pachgani', ''));
 pFeatures.push(new _Feature('Tapola', ''));
 pFeatures.push(new _Feature('Satara Kaspathar', ''));
 pFeatures.push(new _Feature('Lonawala Khandala', ''));
-Packages.push(new _Package('4', 'Weekend Gateaways', 'img/103.jpg', pFeatures, cFeatures));
+packagesList.push(new _Package('4', 'Weekend Gateaways', 'img/103.jpg', pFeatures));
 
 pFeatures = [];
 pFeatures.push(new _Feature('Konkan', ''));
 pFeatures.push(new _Feature('Goa', ''));
-Packages.push(new _Package('5', 'Long Trips', 'img/103.jpg', pFeatures, cFeatures));
+packagesList.push(new _Package('5', 'Long Trips', 'img/103.jpg', pFeatures));
 
+var _Packages = function(packagesList, cFeatures) {
+	this.packagesList = packagesList;
+	this.cFeatures = cFeatures;
+}
+
+var Packages = new _Packages(packagesList, cFeatures);
 
 var _WhyWe = function(bullets) {
 	this.bullets = bullets

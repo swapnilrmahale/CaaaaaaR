@@ -1,3 +1,8 @@
+@viewport {
+	width : device-width;
+	initial-scale : 1.0;
+}
+
 @font-face {
 	font-family: Italianno;
 	src: url(../fonts/Italianno-Regular-OTF.otf);
@@ -10,7 +15,7 @@
 
 body {
 	background-color: white;
-	overflow-y: hidden;
+	/* overflow-y: hidden; */
 }
 
 .navbar-custom {
@@ -39,17 +44,17 @@ section {
 }
 
 .wrapper {
-	margin: 5px auto;
-	padding-top: 50px;
+	padding-top: 8vh;
 }
 
 #slider {
 	position: relative;
-	top: 0px;
-	left: 0px;
-	width: 100%;
+	top: 0vh;
+	left: 0vw;
+	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	margin: 0 auto;
 }
 
 #slides {
@@ -57,30 +62,32 @@ section {
 	position: absolute;
 	left: 0vw;
 	top: 0vh;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
 }
 
 #slides div div.caption header h2 {
-	left: 45vw;
+	left: 40vw;
 	position: absolute;
-	top: -2vh;
+	top: 1vh;
+	font-size: 2.5vw;
+	color: cyan;
 }
 
 .common-features {
 	position: absolute;
 	left: 80vw;
 	top: 18vh;
+	font-size: 1.2vw;
 }
 
 .common-features ul li {
-	/* border: 1px solid green; */
 	height: 10vh;
 	list-style: outside none none;
 	width: 15vw;
 	font-family: Verdana;
-	color: #430D2B;
+	color: orange;
 	font-stretch: extra-expanded;
 	cursor: pointer;
 }
@@ -88,18 +95,28 @@ section {
 .package-specific {
 	position: absolute;
 	left: 5vw;
-	top: 28vh;
+	top: 18vh;
+	font-size: 1.2vw;
 }
 
 .package-specific ul li {
-	/* border: 1px solid green; */
 	height: 10vh;
 	list-style: outside none none;
 	width: 15vw;
 	font-family: Verdana;
-	color: cyan;
+	color: orange;
 	font-stretch: extra-expanded;
 	cursor: pointer;
+}
+
+.package-specific ul li:before, .common-features ul li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content:"\e127";
+    font-family: 'Glyphicons Halflings';
+    font-size: 1.2vw;
+    float: left;
+    margin-left: -2vw;
+    color: orange;
 }
 
 .caption {
@@ -108,7 +125,6 @@ section {
 	position: absolute;
 	top: 8vh;
 	width: 100vw;
-	/* border: 1px solid red; */
 }
 
 .select-car {
@@ -118,41 +134,23 @@ section {
 }
 
 #whywe div.wrapper {
-	border: 1px solid red;
+	/* border: 0.5vw solid red; */
 }
 
 #reasons {
-    border: 1px solid red;
-    font-size: 2rem;
-    margin-top: 10vh;
+    /* border: 0.5vw solid red; */
+    font-size: 1.5vw;
+    margin-top: 6vh;
     color: coral;	
 }
 
 #reasons ul li {
-	margin: 33px 0;
+	margin: 5vh 0;
 }
 
 #main {
 	background-color: black;
 	font-family: Gidole-Regular;
-}
-
-#input-1 {
-	margin: auto;
-	max-width: 100%;
-	padding-bottom: 5px;
-	color: brown;
-	background-image: url(../img/green-back-1.png);
-}
-
-#input-1-header {
-	margin: auto;
-	max-width: 100%;
-}
-
-.left-me {
-	text-align: left;
-	margin-left: 0px;
 }
 
 footer {

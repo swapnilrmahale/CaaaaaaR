@@ -3,10 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="">
 
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>It's Me...</title>
+
+<link
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+	rel="stylesheet">
 
 <!-- Bootstrap -->
 <link
@@ -23,7 +27,7 @@
 </head>
 <body>
 	<header ng-controller="MenuController">
-	<!-- <header> -->
+	<!-- <header> 
 		<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
 			<div class="container">
 				<div class="navbar-header">
@@ -51,18 +55,16 @@
 								<span class="caret"></span>
 						</a>
 							<ul class="dropdown-menu">
-								<!--  <li class="dropdown-header">Maharashtra</li> -->
 								<li><a href="#">Pune</a></li>
 							</ul></li>
 					</ul>
 				</div>
-				<!--/.nav-collapse -->
 			</div>
-		</nav>
+		</nav>-->
 	</header>
 
-	<section id="slider-container" ng-controller="SliderController">
-		<div id="slider">
+	<section id="slider-container" ng-controller="SliderController" data-role="page">
+		<div id="slider" data-role="content">
 			<div id="slides" u="slides">
 				<div id="{{ package.id }}" ng-repeat="package in Packages">
 					<img u="image" ng-src="{{package.img}}" />
@@ -72,95 +74,26 @@
 						</header>
 						<aside class="package-specific">
 							<ul>
-								<li ng-repeat="feature in package.pFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip"><span
-									class="glyphicon glyphicon-hand-right"></span><span ng-bind="feature.name"></span></li>
+								<li ng-repeat="feature in package.pFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip">
+									<span ng-bind="feature.name"></span>
+								</li>
 							</ul>
 						</aside>
 						<aside class="common-features">
 							<ul>
-								<li ng-repeat="feature in package.cFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip"><span 
-									class="glyphicon glyphicon-hand-right"></span><span ng-bind="feature.name"></span></li>
+								<li ng-repeat="feature in package.cFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip">
+									<span ng-bind="feature.name"></span>
+								</li>
 							</ul>
 						</aside>
-						<button type="button" value="101"
-							class="btn btn-success select-car">Mercedes A Class</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	
-	<!--  <section id='main' class='container'>
-		<div class="wrapper">
-			<div id='input-1' class='row  ui-corner-all'>
-
-				<div id='input-1-header' class='row'>
-					<div id='input-place-from-header' class='col-sm-3 left-me'>
-						&nbsp;&nbsp;<b><span id='driveThrough'>Drive Through</span></b>
-					</div>
-					<div id='input-place-from-header' class='col-sm-3 left-me'>
-						&nbsp;&nbsp;<b>Pickup Me From...</b>
-					</div>
-					<div id='input-date-from-header' class='col-sm-3 left-me'>
-						&nbsp;&nbsp;<b>Pickup Me Around...</b>
-					</div>
-					<div id='input-date-to-header' class='col-sm-3 left-me'>
-						&nbsp;&nbsp;<b>Dropoff Me Around...</b>
-					</div>
-				</div>
-
-				<div id='vehicle-wrapper' class='col-md-3'>
-					<div class="input-group">
-						<select id="vehicle" class='multi-dropdown form-controli input'
-							placeholder="Vehicle">
-							<option value="101">Mercedes A</option>
-							<option value="102">Mercedes G</option>
-							<option value="201">XUV 500</option>
-							<option value="103">Honda City</option>
-							<option value="001">Maruti Swift</option>
-						</select>
-					</div>
-				</div>
-
-				<div id='input-place-from' class='col-md-3'>
-					<div class="input-group">
-						<select id="from" class='multi-dropdown form-controli input'
-							placeholder="Pickup Me From">
-							<option value="1">Swargate</option>
-							<option value="2">Shivaji Nagar</option>
-							<option value="3">Pune Station</option>
-							<option value="4">Nigdi</option>
-						</select>
-					</div>
-				</div>
-
-				<div id='input-date-from' class='col-md-3'>
-					<div id='date-from' class='input-group date'>
-						<input type='text' class="form-control" /> <span
-							class="input-group-addon"> <span
-							class="glyphicon glyphicon-calendar"></span>
-						</span>
-					</div>
-				</div>
-
-				<div id='input-date-to' class='col-md-3'>
-					<div id='date-to' class='input-group date'>
-						<input type='text' class="form-control" /> <span
-							class="input-group-addon"> <span
-							class="glyphicon glyphicon-calendar"></span>
-						</span>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-
-	</section> -->
-
 	<section id='packages' class='container'>
-		<div class="wrapper">This is for showing Packages</div>
+		<div class="wrapper">This Section is under Construction.</div>
 	</section>
 
 	<section id='whywe' class='container' ng-controller="WhyWeController">
@@ -174,11 +107,11 @@
 	</section>
 
 	<section id='aboutus' class='container'>
-		<div class="wrapper">This is for showing About Us</div>
+		<div class="wrapper">This Section is under Construction.</div>
 	</section>
 
 	<section id='contactus' class='container'>
-		<div class="wrapper">This is for showing Contact Us</div>
+		<div class="wrapper">This Section is under Construction.</div>
 	</section>
 
 	<footer class='container-fluid footer-wrapper' ng-controller="FooterController">
@@ -190,6 +123,7 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 	<script
