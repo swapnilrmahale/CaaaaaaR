@@ -6,9 +6,10 @@
 var menu = angular.module('menu', []);
 var slider = angular.module('slider', []);
 var whywe = angular.module('whywe', []);
+var contactus = angular.module('contactus', []);
 var footer = angular.module('footer', []);
 
-var pages = new Array("#slider-container", "#packages", "#whywe", "#aboutus");
+var pages = new Array("#slider-container", "#packages", "#whywe", "#contactus");
 
 menu.controller('MenuController', function($scope){
 	console.log(MenuItems);
@@ -44,9 +45,14 @@ whywe.controller('WhyWeController', function($scope){
 	$scope.WhyWe = WhyWe;
 });
 
+contactus.controller('ContactUsController', function($scope){
+	console.log(ContactUs);	
+	$scope.ContactUs = ContactUs;
+});
+
 
 footer.controller('FooterController', function($scope){
 	$scope.Footer = Footer;
 });
 
-var app = angular.module('caar', ['menu', 'slider', 'whywe', 'footer']);
+var app = angular.module('caar', ['menu', 'slider', 'whywe', 'contactus', 'footer']);

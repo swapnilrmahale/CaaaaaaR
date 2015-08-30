@@ -14,7 +14,7 @@ var MenuItems = new Array();
 MenuItems.push(new _MenuItem('#slider-container', 'Home'));
 MenuItems.push(new _MenuItem('#packages', 'Packages'));
 MenuItems.push(new _MenuItem('#whywe', 'Why We ?'));
-MenuItems.push(new _MenuItem('#aboutus', 'About-Us'));
+MenuItems.push(new _MenuItem('#contactus', 'About-Us'));
 
 var _Feature = function(name, oneLiner) {
 	this.name = name;

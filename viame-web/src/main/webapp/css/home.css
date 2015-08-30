@@ -4,11 +4,6 @@
 }
 
 @font-face {
-	font-family: Italianno;
-	src: url(../fonts/Italianno-Regular-OTF.otf);
-}
-
-@font-face {
 	font-family: Gidole-Regular;
 	src: url(../fonts/Gidole-Regular.otf);
 }
@@ -33,9 +28,8 @@ body {
 #call {
 	vertical-align: middle;
 	text-align: center;
-	font-family: Italianno;
-	font-size: 6vh;
-	color: red;
+	font-size: 4vh;
+	color: white;
 }
 
 section {
@@ -44,7 +38,7 @@ section {
 }
 
 .wrapper {
-	padding-top: 8vh;
+	padding-top: 8.5vh;
 }
 
 #slider {
@@ -122,7 +116,7 @@ section {
 
 .common-features {
 	left: 80vw;
-	top: 30vh;
+	top: 25vh;
 }
 
 .package-specific {
@@ -138,8 +132,20 @@ section {
 	width: 100vw;
 }
 
+#packages {
+	background-color: #211818;
+}
+
+#whywe {
+	background-color: black;
+	color: white;	
+}
+
 #whywe div.wrapper {
-	/* border: 0.5vw solid red; */
+	padding-left: 8vw;
+	vertical-align: middle;
+	/* border: 1px solid white; */
+	height: 100%;
 }
 
 #reasons {
@@ -151,6 +157,83 @@ section {
 
 #reasons ul li {
 	margin: 5vh 0;
+}
+
+#contactus {
+	background-color: #211818;
+	/* border: 1px solid red; */
+}
+
+#contactus .wrapper {
+	/* border: 1px solid white; */
+	height: 100%;
+}
+
+
+#ranjit{
+	position: relative;
+	top: 2vh;
+	left: 15vw;
+	height: 35vh;
+	width: 33vw;
+	border: 1px solid black;
+	padding-left: 2vw;
+	background-color: #E7E578;
+	box-shadow: 0px 0px 5px 5px grey;
+	border-radius: 3vw 0vw 3vw 0vw;
+	color: #AA77E8;
+}
+
+#sonam{
+	position: relative;
+	top: 3vh;
+	left: 50vw;
+	height: 35vh;
+	width: 33vw;
+	border: 1px solid black;
+	padding-left: 2vw;
+	background-color: #E4E25F;
+	box-shadow: 0px 0px 5px 5px grey;
+	border-radius: 3vw 0vw 3vw 0vw;
+
+}
+
+.corp {
+	font-size: 2vw;
+	font-weight: bolder;
+}
+
+.hr {
+	width: 29vw;
+	height: 0.25vh;
+	position: relative;
+	background-color: magenta; 
+}
+
+.line {
+	font-size: 1vw;
+	font-style: italic;
+}
+
+.left {
+	/* border: 1px solid pink; */
+	width: 15vw;
+	height: 16vh;
+	position: relative;
+	top: 12vh;
+	font-size: 1.5vw;
+}
+
+.right{
+	/* border: 1px solid pink; */
+	float: right;
+	width: 15vw;
+	height: 16vh;
+	position: relative;
+	top: 0vh;
+	text-align: right;
+	font-size: 1.5vw;
+	padding-right: 2vw;
 }
 
 #main {

@@ -2,7 +2,7 @@ var _Title = function(href, title) {
 	this.title = title;
 	this.href = href;
 }
-var Title = new _Title('#', 'Its Me Corp');
+var Title = new _Title('#', 'ViAs Corporation');
 
 
 var _MenuItem = function(href, dName) {
@@ -14,7 +14,7 @@ var MenuItems = new Array();
 MenuItems.push(new _MenuItem('#slider-container', 'Home'));
 MenuItems.push(new _MenuItem('#packages', 'Packages'));
 MenuItems.push(new _MenuItem('#whywe', 'Why We ?'));
-MenuItems.push(new _MenuItem('#aboutus', 'About-Us'));
+MenuItems.push(new _MenuItem('#contactus', 'Contact-Us'));
 
 var _Feature = function(name, oneLiner) {
 	this.name = name;
@@ -22,11 +22,12 @@ var _Feature = function(name, oneLiner) {
 }
 
 var cFeatures = new Array();
-cFeatures.push(new _Feature('Water Bottle', 'Free Water Bottle'));
-cFeatures.push(new _Feature('Chocolates', 'One Liner About Chocolates'));
-cFeatures.push(new _Feature('XYZ Feature', 'One Liner About XYZ'));
-
-cFeatures.push(new _Feature('Another Feature', 'One Liner About Another Feature'));
+cFeatures.push(new _Feature('Water Bottle', 'Free Water Bottle Per Passenger'));
+cFeatures.push(new _Feature('Mom Made Chocolates', 'Specially baked a pack of Mom Made Chocolates'));
+cFeatures.push(new _Feature('Tissue Paper', 'A Pack of Tissue Papers'));
+cFeatures.push(new _Feature('Garbage Bin Bags', 'We know you care for the environment'));
+cFeatures.push(new _Feature('Magzine and News Paper', 'Magzines and News Paper'));
+cFeatures.push(new _Feature('Tolls Included', 'For Selected Packages Tolls are included in Package Price'));
 
 var _Package = function(id, name, img, pFeatures) {
 	this.id = id;
@@ -96,7 +97,29 @@ var _Copyright = function(part1, part2) {
 	this.part1 = part1;
 	this.part2 = part2;
 }
-var Copyright = new _Copyright('Copyright reserve', '2015 Its Me Corporation');
+
+var _Contact = function(name, number) {
+	this.name = name;
+	this.number = number;
+}
+var ContactLandline = new Array();
+ContactLandline.push(new _Contact("", "020-244-24-213"));
+
+var ContactMobile = new Array();
+ContactMobile.push(new _Contact("Ranjit", "+91-8600866593"));
+ContactMobile.push(new _Contact("Sonam", "+91-9822429357"));
+
+var _ContactUS = function(name, address, landline, mobile) {
+	this.name = name;
+	this.address = address;
+	this.landline = landline;
+	this.mobile = mobile;
+}
+
+var ContactUs = new _ContactUS("ViAs Corporation", "Parvati Darshan, Pune - 411009", ContactLandline, ContactMobile);
+
+
+var Copyright = new _Copyright('Copyright reserve', '2015 ViAs Corporation');
 
 var _Footer = function(copyright) {
 	this.copyright = copyright;
