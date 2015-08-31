@@ -28,7 +28,7 @@ $(function() {
 
 	$('.menu').on('click', function() {
 		scrollTo($(this).attr('href'), 'easeOutBack');
-		$('header nav').attr('background-color', 'black');
+		/*$('header nav').attr('background-color', 'black');*/
 		return true;
 	});
 	
