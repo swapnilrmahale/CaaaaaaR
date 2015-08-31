@@ -18,20 +18,14 @@ menu.controller('MenuController', function($scope){
 	$scope.direction = true;
 	$scope.currentPage = 0;
 
-	$scope.scroll = function() {
-		if (!$scope.direction) {
-		
+	$scope.scroll = function(direction) {
+		if (direction === "up" && $scope.currentPage > 0) {
 			$scope.currentPage--;
-			if ($scope.currentPage === 0) { $scope.direction = true; }
-		
-		} else if ($scope.direction) {
-		
+			scrollTo(pages[$scope.currentPage], 'easeOutBack');
+		} else if (direction === "down" && $scope.currentPage < pages.length) {
 			$scope.currentPage++;
-			if ($scope.currentPage === pages.length - 1) { $scope.direction  = false; }
-		
-		}
-
-		scrollTo(pages[$scope.currentPage], 'easeOutBack');
+			scrollTo(pages[$scope.currentPage], 'easeOutBack');
+		}		
 	};
 });
 

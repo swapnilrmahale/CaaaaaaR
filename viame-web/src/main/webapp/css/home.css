@@ -29,7 +29,7 @@ body {
 	vertical-align: middle;
 	text-align: center;
 	font-size: 4vh;
-	color: white;
+	color: #E35C8F;
 }
 
 section {
@@ -68,7 +68,29 @@ section {
 	vertical-align: middle;
 }
 
-.down {
+#ctrl {
+	position: fixed;
+	top: 85vh;
+	left: 45vw;
+	/* border: 1px solid red; */
+	width: 10vw;
+	height: 10vh;
+}
+#down {
+	position: fixed;
+	left: 50vw;
+	top: 85vh;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 10vh;
+	color: chocolate;
+}
+
+#down:hover {
+	cursor: pointer;
+}
+
+#up {
 	position: fixed;
 	left: 45vw;
 	top: 85vh;
@@ -78,7 +100,7 @@ section {
 	color: chocolate;
 }
 
-.down:hover {
+#up:hover {
 	cursor: pointer;
 }
 
@@ -157,6 +179,14 @@ section {
 
 #reasons ul li {
 	margin: 5vh 0;
+	border: 1px solid yellow;
+	border-radius: 1vw 1vw 1vw 1vw;
+	padding-left: 1vw;
+	list-style: none;
+	width: 90%;
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 3px 3px chocolate;
 }
 
 #contactus {
@@ -178,10 +208,9 @@ section {
 	width: 33vw;
 	border: 1px solid black;
 	padding-left: 2vw;
-	background-color: #E7E578;
+	background-color: white;
 	box-shadow: 0px 0px 5px 5px grey;
 	border-radius: 3vw 0vw 3vw 0vw;
-	color: #AA77E8;
 }
 
 #sonam{
@@ -192,27 +221,27 @@ section {
 	width: 33vw;
 	border: 1px solid black;
 	padding-left: 2vw;
-	background-color: #E4E25F;
+	background-color: white;
 	box-shadow: 0px 0px 5px 5px grey;
 	border-radius: 3vw 0vw 3vw 0vw;
-
 }
 
 .corp {
 	font-size: 2vw;
 	font-weight: bolder;
+	color: #3DCF55;
 }
 
 .hr {
 	width: 29vw;
 	height: 0.25vh;
-	position: relative;
-	background-color: magenta; 
+	position: relative; 
 }
 
 .line {
 	font-size: 1vw;
 	font-style: italic;
+	color: #3DCF55;
 }
 
 .left {
@@ -222,6 +251,7 @@ section {
 	position: relative;
 	top: 12vh;
 	font-size: 1.5vw;
+	color: #44BBD0;
 }
 
 .right{
@@ -252,4 +282,39 @@ footer {
 	font-family: Verdana;
 	vertical-align: middle;
 	text-align: center;
+}
+
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }
