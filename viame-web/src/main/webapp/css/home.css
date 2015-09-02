@@ -30,6 +30,7 @@ body {
 	text-align: center;
 	font-size: 4vh;
 	color: #F08EB3;
+	color: yellow;
 }
 
 section {
@@ -78,11 +79,11 @@ section {
 }
 #down {
 	position: fixed;
-	left: 50vw;
-	top: 85vh;
+	left: 49vw;
+	top: 90vh;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 10vh;
+	font-size: 6vh;
 	color: chocolate;
 }
 
@@ -92,11 +93,11 @@ section {
 
 #up {
 	position: fixed;
-	left: 45vw;
-	top: 85vh;
+	left: 46vw;
+	top: 90vh;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 10vh;
+	font-size: 6vh;
 	color: chocolate;
 }
 
@@ -159,7 +160,7 @@ section {
 }
 
 #whywe {
-	background-color: black;
+	background-color: white;
 	color: white;	
 }
 
