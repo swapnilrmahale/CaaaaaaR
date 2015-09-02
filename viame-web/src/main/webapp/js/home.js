@@ -21,10 +21,21 @@ function scrollTo(dest, effect) {
 	});
 }
 
+function haschanged() {
+	console.log("URL CHanged");
+}
+
+$(window).on('hashchange', function(e){
+    var origEvent = e.originalEvent;
+    $('.menu').removeClass('active');
+    $("a[href$='"+location.hash+"']").addClass('active');
+});
 
 $(function() {
 
 	$('body').animatescroll();
+
+	$("a[href$='#slider-container']").addClass('active');
 
 	$('.menu').on('click', function() {
 		scrollTo($(this).attr('href'), 'easeOutBack');

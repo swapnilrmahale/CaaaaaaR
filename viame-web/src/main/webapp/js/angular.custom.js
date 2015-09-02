@@ -24,12 +24,16 @@ menu.controller('MenuController', function($scope){
 		if (direction === "up" && $scope.currentPage > 0) {
 			$scope.currentPage = $scope.currentPage - 1;
 			/*console.log(direction + " : " + $scope.currentPage);*/
+			
 			scrollTo(pages[$scope.currentPage], 'easeOutBack');
+			location.hash = pages[$scope.currentPage]; 
 
 		} else if (direction === "down" && $scope.currentPage < pages.length - 1) {
 			$scope.currentPage = $scope.currentPage + 1;
 			/*console.log(direction + " : " + $scope.currentPage);*/
+			
 			scrollTo(pages[$scope.currentPage], 'easeOutBack');
+			location.hash = pages[$scope.currentPage];
 		}
 		/*console.log("End : " + direction + " : " + $scope.currentPage);*/		
 	};
