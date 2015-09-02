@@ -2,7 +2,7 @@ var _Title = function(href, title) {
 	this.title = title;
 	this.href = href;
 }
-var Title = new _Title('#', 'ViAs Corporation');
+var Title = new _Title('#', 'ViAs Travels');
 
 
 var _MenuItem = function(href, dName) {
@@ -26,8 +26,8 @@ cFeatures.push(new _Feature('Water Bottle', 'Free Water Bottle Per Passenger'));
 cFeatures.push(new _Feature('Mom Made Chocolates', 'Specially baked a pack of Mom Made Chocolates'));
 cFeatures.push(new _Feature('Tissue Paper', 'A Pack of Tissue Papers'));
 cFeatures.push(new _Feature('Garbage Bin Bags', 'We know you care for the environment'));
-cFeatures.push(new _Feature('Magzine and News Paper', 'Magzines and News Paper'));
-cFeatures.push(new _Feature('Tolls Included', 'For Selected Packages Tolls are included in Package Price'));
+cFeatures.push(new _Feature('Magazine and News Paper', 'Magazines and News Paper'));
+cFeatures.push(new _Feature('Tolls Included<sup>*</sup>', '* For Selected Packages Tolls are included in Package Price'));
 
 var _Package = function(id, name, img, pFeatures) {
 	this.id = id;
@@ -47,7 +47,7 @@ packagesList.push(new _Package('1', 'Airport Services', 'img/103.jpg', pFeatures
 
 pFeatures = [];
 pFeatures.push(new _Feature('Lavasa', ''));
-pFeatures.push(new _Feature('Khadakwasla Sinhgad', ''));
+pFeatures.push(new _Feature('Khadakwasla Sinhagad', ''));
 pFeatures.push(new _Feature('Imagica', ''));
 packagesList.push(new _Package('2', 'Pune One Day Trips', 'img/103.jpg', pFeatures));
 
@@ -83,7 +83,7 @@ var _WhyWe = function(bullets) {
 
 var bullets = new Array();
 bullets.push("Book a car with us and we guarantee you convenience, quality and comfort to its best.");
-bullets.push("For local trips, we do not have a constraint of minimum or maximum hours which are charged.");
+bullets.push("For local trips, we have unique and flexible packages");
 bullets.push("Customer satisfaction is our true motive.");
 bullets.push("We have a team of most well behaved and courteous drivers");
 bullets.push("One Water bottle per person travelling with us because we want you to take care of yourself during the journey");
@@ -106,7 +106,7 @@ var ContactLandline = new Array();
 ContactLandline.push(new _Contact("", "020-244-24-213"));
 
 var ContactMobile = new Array();
-ContactMobile.push(new _Contact("Ranjit", "+91-8600866593"));
+ContactMobile.push(new _Contact("Ranjit", "+91-8600866596"));
 ContactMobile.push(new _Contact("Sonam", "+91-9822429357"));
 
 var _ContactUS = function(name, address, landline, mobile) {
@@ -116,10 +116,10 @@ var _ContactUS = function(name, address, landline, mobile) {
 	this.mobile = mobile;
 }
 
-var ContactUs = new _ContactUS("ViAs Corporation", "Parvati Darshan, Pune - 411009", ContactLandline, ContactMobile);
+var ContactUs = new _ContactUS("ViAs Travels", "Parvati Darshan, Pune - 411009", ContactLandline, ContactMobile);
 
 
-var Copyright = new _Copyright('Copyright reserve', '2015 ViAs Corporation');
+var Copyright = new _Copyright('Copyright reserved', '2015 ViAs Travels');
 
 var _Footer = function(copyright) {
 	this.copyright = copyright;

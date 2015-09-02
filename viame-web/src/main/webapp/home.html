@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>ViAs Corporation</title>
+<title>ViAs Travels</title>
 
 <!-- Bootstrap -->
 <link
@@ -74,8 +74,8 @@
 		</div>
 		<aside class="common-features features">
 			<ul>
-				<li ng-repeat="feature in Packages.cFeatures" title="{{ feature.oneLiner }}" data-toggle="tooltip">
-					<span ng-bind="feature.name"></span>
+				<li ng-repeat="feature in Packages.cFeatures" title="{{ feature.oneLiner | trusted}}" data-toggle="tooltip">
+					<span ng-bind-html="feature.name | trusted"></span>
 				</li>
 			</ul>
 		</aside>
@@ -95,38 +95,33 @@
 		</div>
 	</section>
 
-	<section id='contactus' class='' ng-controller="ContactUsController">
+<section id='contactus' class='' ng-controller="ContactUsController">
 		<div class="wrapper">
 			<div id="ranjit">
-				<div class="corp"><strong>ViAs Corporation</strong></div>
-				<!-- <div class="hr"> </div> -->
-				<div class="line">Tours & Travells</div>
-				<div class="right">
+				<div class="corp"><strong>ViAs Travels</strong></div>
+				<div class="left">
 					Parvati Darshan,<br>
 					Pune - 411 009<br>
-					<abbr title="Office">O:</abbr> 020-244-24-213 <br>					
+					<abbr title="Office">O:</abbr> 020-244-24-213 <br>
 				</div>
-				<div class="left">
+				<div class="right">
 					Mr. Ranjit<br>
 					<abbr title="Email">E:</abbr> ranjit@vias.co.in <br>
-					<abbr title="Mobile">M:</abbr> +91-8600866593 <br>					
-				</div>		
+					<abbr title="Mobile">M:</abbr> +91-8600866596 <br>	
+				</div>
 			</div>
-	
 			<div id="sonam">
-				<div class="corp"><strong>ViAs Corporation</strong></div>
-				<!-- <div class="hr"> </div> -->
-				<div class="line">Tours & Travells</div>
-				<div class="right">
+				<div class="corp"><strong>ViAs Travels</strong></div>
+				<div class="left">
 					Parvati Darshan,<br>
 					Pune - 411 009<br>
-					<abbr title="Office">O:</abbr> 020-244-24-213 <br>					
+					<abbr title="Office">O:</abbr> 020-244-24-213 <br>
 				</div>
-				<div class="left">
+				<div class="right">
 					Mrs. Sonam<br>
 					<abbr title="Email">E:</abbr> sonam@vias.co.in <br>
-					<abbr title="Mobile">M:</abbr> +91-9822429357 <br>					
-				</div>		
+					<abbr title="Mobile">M:</abbr> +91-9822429357 <br>	
+				</div>
 			</div>
 		</div>
 	</section>
@@ -136,7 +131,6 @@
 
 		<span id="down" class="glyphicon glyphicon-menu-down" ng-click="scroll('down')"></span>
 	</div>
-
 	<footer class='container-fluid footer-wrapper' ng-controller="FooterController">
 		<span ng-bind="Footer.copyright.part1"></span>
 		<span class="glyphicon glyphicon-copyright-mark"></span>

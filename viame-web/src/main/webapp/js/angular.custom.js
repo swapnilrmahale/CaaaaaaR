@@ -8,6 +8,7 @@ var slider = angular.module('slider', []);
 var whywe = angular.module('whywe', []);
 var contactus = angular.module('contactus', []);
 var footer = angular.module('footer', []);
+var cfilter = angular.module('cfilter', []);
 
 var pages = new Array("#slider-container", "#packages", "#whywe", "#contactus");
 
@@ -36,7 +37,7 @@ menu.controller('MenuController', function($scope){
 
 slider.controller('SliderController', function($scope){
 	console.log(Packages);
-	$scope.Packages = Packages;	
+	$scope.Packages = Packages;
 });
 
 whywe.controller('WhyWeController', function($scope){
@@ -54,4 +55,10 @@ footer.controller('FooterController', function($scope){
 	$scope.Footer = Footer;
 });
 
-var app = angular.module('caar', ['menu', 'slider', 'whywe', 'contactus', 'footer']);
+cfilter.filter('trusted', function($sce){
+    return function(text) {
+        return $sce.trustAsHtml(text);
+    };
+});
+
+var app = angular.module('caar', ['cfilter', 'menu', 'slider', 'whywe', 'contactus', 'footer']);

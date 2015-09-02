@@ -29,7 +29,7 @@ body {
 	vertical-align: middle;
 	text-align: center;
 	font-size: 4vh;
-	color: #E35C8F;
+	color: #F08EB3;
 }
 
 section {
@@ -246,24 +246,25 @@ section {
 
 .left {
 	/* border: 1px solid pink; */
-	width: 15vw;
-	height: 16vh;
+	width: 13vw;
+	height: 13vh;
 	position: relative;
-	top: 12vh;
+	top: 0vh;
+	left: 0vw;
 	font-size: 1.5vw;
 	color: #44BBD0;
 }
 
 .right{
 	/* border: 1px solid pink; */
-	float: right;
-	width: 15vw;
+	width: 17vw;
 	height: 16vh;
 	position: relative;
 	top: 0vh;
+	left: 14vw;
 	text-align: right;
 	font-size: 1.5vw;
-	padding-right: 2vw;
+	padding: 2vh 1vw 0vh 0vw;
 }
 
 #main {
@@ -286,17 +287,17 @@ footer {
 
 .blink_me {
     -webkit-animation-name: blinker;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 8s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
 
     -moz-animation-name: blinker;
-    -moz-animation-duration: 2s;
+    -moz-animation-duration: 8s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
 
     animation-name: blinker;
-    animation-duration: 2s;
+    animation-duration: 8s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
