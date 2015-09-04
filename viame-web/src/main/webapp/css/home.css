@@ -16,7 +16,7 @@ body {
 .navbar-custom {
 	background-color: black;
 	background-image: none;
-	border-radius: 0vw 0vw 2vw 2vw
+	border-radius: 0vw 0vw 2vw 2vw;
 }
 
 .active {
@@ -29,6 +29,13 @@ body {
 	text-align: center;
 	font-family: cursive;
 	font-size: 4vh;
+}
+
+.navbar-brand {
+	font-size: 4vh;
+	font-family: Verdana;
+	font-weight: bold;
+	color: white!important;
 }
 
 #call {
@@ -69,27 +76,33 @@ section {
 #slides div div.caption header {
 	position: absolute;
 	left: 30vw;
-	top: 1vh;
+	top: 2vh;
 	width: 40vw;
 	text-align: center;
 	vertical-align: middle;
+	background-color: black;
+	box-shadow: 0px 0px 5px 5px grey;
+	border-radius: 2vw 2vw 0vw 0vw
 }
 
-#ctrl {
-	position: fixed;
-	top: 85vh;
-	left: 45vw;
-	width: 10vw;
-	height: 10vh;
+#slides div div.caption header h2 {
+	font-size: 2.5vw;
+	color: cyan;
+	/* background-color: black;
+	box-shadow: 0px 0px 5px 5px grey;
+	border-radius: 2vw 2vw 0vw 0vw */
 }
+
 #down {
 	position: fixed;
-	left: 49vw;
+	left: 50vw;
 	top: 90vh;
 	text-align: center;
 	vertical-align: middle;
 	font-size: 6vh;
 	color: chocolate;
+	background-color: black;
+	border-radius: 0vw 0vw 1vw 0vw;
 }
 
 #down:hover {
@@ -98,38 +111,40 @@ section {
 
 #up {
 	position: fixed;
-	left: 46vw;
+	left: 47vw;
 	top: 90vh;
 	text-align: center;
 	vertical-align: middle;
 	font-size: 6vh;
 	color: chocolate;
+	background-color: black;
+	border-radius: 0vw 0vw 0vw 1vw;
 }
 
 #up:hover {
 	cursor: pointer;
 }
 
-#slides div div.caption header h2 {
-	font-size: 2.5vw;
-	color: cyan;
-}
-
 .features {
 	position: absolute;
 	font-size: 1.2vw;
+	vertical-align: middle!important;
+	background-color: white;
+	box-shadow: 0px 0px 5px 5px grey;
 }
 
 .features ul {
 	list-style: outside none none;
 	font-family: Verdana;
-	color: orange;
+	color: #CD00FF;
 	font-stretch: extra-expanded;
 	cursor: pointer;
+	vertical-align: middle!important;
+	height: auto;
 }
 
 .features ul li {
-    height: 10vh;
+    margin: 5vh 2vh 5vh 1vh;
 }
 
 .features ul li:before {
@@ -139,17 +154,19 @@ section {
     font-size: 1.2vw;
     float: left;
     margin-left: -2vw;
-    color: orange;
+    color: #CD00FF;
 }
 
 .common-features {
-	left: 80vw;
-	top: 25vh;
+	left: 75vw;
+	top: 30vh;
+	border-radius: 3vw 3vw 3vw 0vw;
 }
 
 .package-specific {
 	left: 10vw;
-	top: 18vh;
+	top: 22vh;
+	border-radius: 3vw 3vw 0vw 3vw;
 }
 
 .caption {
@@ -277,7 +294,7 @@ section {
 }
 
 footer {
-	background-color: black;
+	background-color: transparent;
 	height: 3vh;
 	left: 0;
 	position: fixed;

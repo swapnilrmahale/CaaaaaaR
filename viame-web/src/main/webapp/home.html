@@ -117,11 +117,10 @@
 		</div>
 	</section>
 
-	<div id="ctrl" ng-controller="MenuController">
-		<span id="up" class="glyphicon glyphicon-menu-up" ng-click="scroll('up')"></span>
+	<span ng-controller="MenuController" id="up" class="glyphicon glyphicon-menu-up" ng-click="scroll('up')"></span>
 
-		<span id="down" class="glyphicon glyphicon-menu-down" ng-click="scroll('down')"></span>
-	</div>
+	<span ng-controller="MenuController" id="down" class="glyphicon glyphicon-menu-down" ng-click="scroll('down')"></span>
+	
 	<footer class='container-fluid footer-wrapper' ng-controller="FooterController">
 		<span ng-bind="Footer.copyright.part1"></span>
 		<span class="glyphicon glyphicon-copyright-mark"></span>

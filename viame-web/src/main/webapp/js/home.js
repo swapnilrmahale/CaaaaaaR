@@ -56,7 +56,7 @@ $(function() {
 		$AutoPlayInterval : 4000,
 		$PauseOnHover : 0,
 		$ArrowKeyNavigation : true,
-		$SlideDuration : 500,
+		$SlideDuration : 4000,
 		$ArrowNavigatorOptions : {
 			$Class : $JssorArrowNavigator$,
 			$ChanceToShow : 2

@@ -45,13 +45,13 @@ pFeatures.push(new _Feature('Mumbai Airport Drop', ''));
 pFeatures.push(new _Feature('Mumbai Airport Pickup', ''));
 pFeatures.push(new _Feature('Pune Airport Drop', ''));
 pFeatures.push(new _Feature('Pune Airport Pickup', ''));
-packagesList.push(new _Package('1', 'Airport Services', 'img/103.jpg', pFeatures));
+packagesList.push(new _Package('1', 'Airport Services', 'img/001_1.jpg', pFeatures));
 
 pFeatures = [];
 pFeatures.push(new _Feature('Lavasa', ''));
 pFeatures.push(new _Feature('Khadakwasla Sinhagad', ''));
 pFeatures.push(new _Feature('Imagica', ''));
-packagesList.push(new _Package('2', 'Pune One Day Trips', 'img/103.jpg', pFeatures));
+packagesList.push(new _Package('2', 'Pune One Day Trips', 'img/002_1.jpg', pFeatures));
 
 pFeatures = [];
 pFeatures.push(new _Feature('Ashtavinayak Darshan', ''));
@@ -65,12 +65,12 @@ pFeatures.push(new _Feature('Pachgani', ''));
 pFeatures.push(new _Feature('Tapola', ''));
 pFeatures.push(new _Feature('Satara Kaspathar', ''));
 pFeatures.push(new _Feature('Lonawala Khandala', ''));
-packagesList.push(new _Package('4', 'Weekend Gateaways', 'img/103.jpg', pFeatures));
+packagesList.push(new _Package('4', 'Weekend Gateaways', 'img/004_1.jpg', pFeatures));
 
 pFeatures = [];
-pFeatures.push(new _Feature('Konkan', ''));
-pFeatures.push(new _Feature('Goa', ''));
-packagesList.push(new _Package('5', 'Long Trips', 'img/103.jpg', pFeatures));
+pFeatures.push(new _Feature('Konkan  ', ''));
+pFeatures.push(new _Feature('Goa  ', ''));
+packagesList.push(new _Package('5', 'Long Trips', 'img/005_1.jpg', pFeatures));
 
 var _Packages = function(packagesList, cFeatures) {
 	this.packagesList = packagesList;
