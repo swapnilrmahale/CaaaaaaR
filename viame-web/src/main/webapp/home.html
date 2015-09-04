@@ -24,7 +24,6 @@
 <body>
 	
 	<header ng-controller="MenuController">
-	<!-- <header> -->
 		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-custom">
 			<div class="container">
 				<div class="navbar-header">
@@ -44,7 +43,7 @@
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<a class="navbar-brand"><span id="call" class='blink_me'>Call Us @ 020-244-24-213</span></a>
+						<a class="navbar-brand"><span id="call" class='blink_me' ng-bind="ContactNumber"></span></a>
 					</ul>
 				</div>
 				<!--/.nav-collapse -->
@@ -97,30 +96,22 @@
 
 <section id='contactus' ng-controller="ContactUsController">
 		<div class="wrapper">
-			<div id="ranjit">
-				<div class="corp"><strong>ViAs Travels</strong></div>
+			<div ng-repeat="contact in Contacts" id="{{ contact.id }}">
+				<div class="corp">
+					<strong>
+						<span ng-bind="contact.organisation.name"></span>
+					</strong>
+				</div>
 				<div class="left">
-					Parvati Darshan,<br>
-					Pune - 411 009<br>
-					<abbr title="Office">O:</abbr> 020-244-24-213 <br>
+					<span ng-repeat="line in contact.organisation.addresslines" 
+						  ng-bind-html="line | trusted">
+					</span>
+					<abbr title="Office">O:</abbr> <span ng-bind="contact.organisation.landline"></span><br>
 				</div>
 				<div class="right">
-					Mr. Ranjit<br>
-					<abbr title="Email">E:</abbr> ranjit@vias.co.in <br>
-					<abbr title="Mobile">M:</abbr> +91-8600866596 <br>	
-				</div>
-			</div>
-			<div id="sonam">
-				<div class="corp"><strong>ViAs Travels</strong></div>
-				<div class="left">
-					Parvati Darshan,<br>
-					Pune - 411 009<br>
-					<abbr title="Office">O:</abbr> 020-244-24-213 <br>
-				</div>
-				<div class="right">
-					Mrs. Sonam<br>
-					<abbr title="Email">E:</abbr> sonam@vias.co.in <br>
-					<abbr title="Mobile">M:</abbr> +91-9822429357 <br>	
+					<span ng-bind="contact.name"></span><br>
+					<abbr title="Email">E:</abbr> <span ng-bind="contact.email"></span><br>
+					<abbr title="Mobile">M:</abbr> <span ng-bind="contact.mobile"></span><br>	
 				</div>
 			</div>
 		</div>
@@ -151,9 +142,7 @@
 	<script src="js/bootstrap-multiselect.js" type="text/javascript"></script>
 	<script src="js/jssor.slider.mini.js"></script>
 	<script src="js/animatescroll.min.js"></script>
-	<!-- <script src="js/google.js" type="text/javascript"></script>
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
-	<script src="js/init.js"></script>
+	<script src="js/init.eng.js"></script>
 	<script src="js/angular.custom.js"></script>
 	<script src="js/home.js" type="text/javascript"></script>
 

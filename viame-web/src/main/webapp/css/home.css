@@ -16,7 +16,6 @@ body {
 .navbar-custom {
 	background-color: black;
 	background-image: none;
-	/* border: 2px solid green; */
 	border-radius: 0vw 0vw 2vw 2vw
 }
 
@@ -80,7 +79,6 @@ section {
 	position: fixed;
 	top: 85vh;
 	left: 45vw;
-	/* border: 1px solid red; */
 	width: 10vw;
 	height: 10vh;
 }
@@ -208,7 +206,7 @@ section {
 }
 
 
-#ranjit{
+#contact1{
 	position: relative;
 	top: 2vh;
 	left: 15vw;
@@ -221,7 +219,7 @@ section {
 	border-radius: 3vw 0vw 3vw 0vw;
 }
 
-#sonam{
+#contact2{
 	position: relative;
 	top: 3vh;
 	left: 50vw;
@@ -253,8 +251,7 @@ section {
 }
 
 .left {
-	/* border: 1px solid pink; */
-	width: 13vw;
+	width: 15vw;
 	height: 13vh;
 	position: relative;
 	top: 0vh;
@@ -264,7 +261,6 @@ section {
 }
 
 .right{
-	/* border: 1px solid pink; */
 	width: 17vw;
 	height: 16vh;
 	position: relative;

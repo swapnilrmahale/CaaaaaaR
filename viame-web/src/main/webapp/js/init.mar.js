@@ -16,6 +16,8 @@ MenuItems.push(new _MenuItem('#packages', 'Packages'));
 MenuItems.push(new _MenuItem('#whywe', 'Why We ?'));
 MenuItems.push(new _MenuItem('#contactus', 'Contact-Us'));
 
+var ContactNumber = "Call Us @ 020-244-24-213";
+
 var _Feature = function(name, oneLiner) {
 	this.name = name;
 	this.oneLiner = oneLiner;
@@ -98,26 +100,29 @@ var _Copyright = function(part1, part2) {
 	this.part2 = part2;
 }
 
-var _Contact = function(name, number) {
+var _Organisation = function (name, addresslines, landline) {
 	this.name = name;
-	this.number = number;
-}
-var ContactLandline = new Array();
-ContactLandline.push(new _Contact("", "020-244-24-213"));
-
-var ContactMobile = new Array();
-ContactMobile.push(new _Contact("Ranjit", "+91-8600866596"));
-ContactMobile.push(new _Contact("Sonam", "+91-9822429357"));
-
-var _ContactUS = function(name, address, landline, mobile) {
-	this.name = name;
-	this.address = address;
+	this.addresslines = addresslines;
 	this.landline = landline;
+}
+var addresslines = new Array();
+addresslines.push("पर्वती दर्शन , <br>");
+addresslines.push("पुणे - ४११ ००९ <br>");
+
+var Organisation = new _Organisation("विअस  Travels", addresslines, "०२०-२४४-२४-२१३");
+
+var _Contact = function(id, organisation, name, email, mobile) {
+	this.id = id;
+	this.organisation = organisation;
+	this.name = name;
+	this.email = email;
 	this.mobile = mobile;
 }
 
-var ContactUs = new _ContactUS("ViAs Travels", "Parvati Darshan, Pune - 411009", ContactLandline, ContactMobile);
+var Contacts = new Array();
 
+Contacts.push(new _Contact("contact1", Organisation, "रंजित", "ranjit@vias.co.in", "+९१-८६००८६६५९३"));
+Contacts.push(new _Contact("contact2", Organisation, "सोनम", "sonam@vias.co.in", "+९१-९८२२४२९३५७"));
 
 var Copyright = new _Copyright('Copyright reserved', '2015 ViAs Travels');
 
