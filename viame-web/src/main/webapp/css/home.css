@@ -222,6 +222,18 @@ section {
 	height: 100%;
 }
 
+#contact0 {
+	position: relative;
+	top: 20vh;
+	left: 32vw;
+	height: 35vh;
+	width: 33vw;
+	border: 1px solid black;
+	padding-left: 2vw;
+	background-color: white;
+	box-shadow: 0px 0px 5px 5px grey;
+	border-radius: 3vw 0vw 3vw 0vw;
+}
 
 #contact1{
 	position: relative;

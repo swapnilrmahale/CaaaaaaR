@@ -10,7 +10,8 @@ var contactus = angular.module('contactus', []);
 var footer = angular.module('footer', []);
 var cfilter = angular.module('cfilter', []);
 
-var pages = new Array("#slider-container", "#packages", "#whywe", "#contactus");
+//var pages = new Array("#slider-container", "#packages", "#whywe", "#contactus");
+var pages = new Array("#slider-container", "#whywe", "#contactus");
 
 menu.controller('MenuController', function($scope){
 	$scope.MenuItems = MenuItems;

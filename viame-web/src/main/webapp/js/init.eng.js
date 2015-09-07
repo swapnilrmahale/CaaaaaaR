@@ -12,7 +12,7 @@ var _MenuItem = function(href, dName) {
 var MenuItems = new Array();
 
 MenuItems.push(new _MenuItem('#slider-container', 'Home'));
-MenuItems.push(new _MenuItem('#packages', 'Packages'));
+//MenuItems.push(new _MenuItem('#packages', 'Packages'));
 MenuItems.push(new _MenuItem('#whywe', 'Why We ?'));
 MenuItems.push(new _MenuItem('#contactus', 'Contact-Us'));
 
@@ -121,8 +121,9 @@ var _Contact = function(id, organisation, name, email, mobile) {
 
 var Contacts = new Array();
 
-Contacts.push(new _Contact("contact1", Organisation, "Mr. Ranjit", "ranjit@vias.co.in", "+91-8600866596"));
-Contacts.push(new _Contact("contact2", Organisation, "Mrs. Sonam", "sonam@vias.co.in", "+91-9822429357"));
+Contacts.push(new _Contact("contact0", Organisation, "", "enquiry@vias.co.in", "+91-8600866596"));
+/*Contacts.push(new _Contact("contact1", Organisation, "Mr. Ranjit", "ranjit@vias.co.in", "+91-8600866596"));
+Contacts.push(new _Contact("contact2", Organisation, "Mrs. Sonam", "sonam@vias.co.in", "+91-9822429357"));*/
 
 var Copyright = new _Copyright('Copyright reserved', '2015 ViAs Travels');
 
