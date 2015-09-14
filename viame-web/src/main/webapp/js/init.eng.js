@@ -57,7 +57,7 @@ pFeatures = [];
 pFeatures.push(new _Feature('Ashtavinayak Darshan', ''));
 pFeatures.push(new _Feature('Shirdi & Shanishinganapur', ''));
 pFeatures.push(new _Feature('Akkalkot Gangapur Tuljapur', ''));
-packagesList.push(new _Package('3', 'Pilgrimage Trips', 'img/103.jpg', pFeatures));
+packagesList.push(new _Package('3', 'Pilgrimage Trips', 'img/003_1.jpg', pFeatures));
 
 pFeatures = [];
 pFeatures.push(new _Feature('Mahabaleshwar', ''));
